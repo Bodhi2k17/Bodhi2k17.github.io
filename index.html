@@ -357,6 +357,22 @@
     	padding-top:50px;
     	color: #f4511e; 
     }
+    #sound
+	{
+	    position:fixed; 
+	    right:5px; 
+	    top:5px; 
+	    background:transparent;
+	    padding: 10px;
+	    font-size: 20px;
+	    color: #f4511e;
+	    cursor: pointer;
+	    trasition:.5s ease;
+	}
+	#sound:hover
+	{
+	    background: #2C261A;
+	}
   	</style>
   	<link rel="shortcut icon" type="image/x-icon" href="./images/logo.png" />
 </head>
@@ -385,6 +401,10 @@
 	<div class="jumbotron text-center">
 		<div id="Home" class="carousel slide" data-ride="carousel">
 	  	  	<div class="carousel-inner" role="listbox">
+	  	  		<div id="sound">
+            		<span class="icon-volume-high" id="sound_on"></span>
+            		<span class="icon-volume-mute2" id="sound_off" style="display:none;"></span>
+        		</div>
 	  	  		<audio loop autoplay class="audioDemo">
 	  	  			<source src="./music/Meditation.mp3" type="audio/mpeg">
 	  	  		</audio>
