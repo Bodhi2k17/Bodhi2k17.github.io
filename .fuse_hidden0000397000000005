@@ -207,14 +207,6 @@
 	    }
 	}
 
-	@font-face {
-    font-family: Montserrat;
-    src: url("fonts/Montserrat-ExtraLight.otf") format("opentype");
-	}
-	.customfont { 
-    font-family: "Montserrat" !important;
-	}
-
 	.service-box p {
 	    margin-bottom: 0;
 	}
@@ -414,7 +406,7 @@
             		<span class="icon-volume-mute2" id="sound_off" style="display:none;"></span>
         		</div>
 	  	  		<audio loop autoplay class="audioDemo">
-	  	  			<source src="./music/Meditation.mp3" type="audio/mpeg">
+	  	  			<!--<source src="./music/Meditation.mp3" type="audio/mpeg">-->
 	  	  		</audio>
 	    	  	<div class="item active"></br></br>
 	      			<img src="./images/BodhiOrange.png" alt="bodhi">
@@ -431,7 +423,7 @@
             <div class='col-md-6 text-center center-block'>
                 <img class='img-responsive' src="./images/colg.jpg">
             </div>
-            <p class='col-md-6 customfont'>Viswajyothi is the lamp of God which brings light to the whole world. It aims to convey glow for the whole world and to bring all to radiance from darkness. "Service of GOD through service of Humanity" is the driving motto of the Kothamangalam Diocese. Viswajyothi College of Engineering &amp; Technology is yet another hallmark of the commitment and experience of the Kothamangalam Diocese in the field of education. Our Vision Moulding Engineers par Excellence with Integrity Fairness and Human Values aims to mould Engineers for tomorrow for the welfare of mankind and Society. Viswajyothi College of Engineering and Technology is the one of the first Self Financing Engineering college in the state which started working in June 2001. The developing infrastructure of the college is truly bound to make the campus, internationally competent in the coming years. Apart from academic achievements the College has also put up sincere efforts to develop Entrepreneurship environment among our students. The college is situated at a distance of 6km from Muvattupuzha Bus Stations at Vazhakulam, The Pineapple city of Asia, in Muvattupuzha – Thodupuzha State Highway.</p>
+            <p class='col-md-6'>Viswajyothi is the lamp of God which brings light to the whole world. It aims to convey glow for the whole world and to bring all to radiance from darkness. "Service of GOD through service of Humanity" is the driving motto of the Kothamangalam Diocese. Viswajyothi College of Engineering &amp; Technology is yet another hallmark of the commitment and experience of the Kothamangalam Diocese in the field of education. Our Vision Moulding Engineers par Excellence with Integrity Fairness and Human Values aims to mould Engineers for tomorrow for the welfare of mankind and Society. Viswajyothi College of Engineering and Technology is the one of the first Self Financing Engineering college in the state which started working in June 2001. The developing infrastructure of the college is truly bound to make the campus, internationally competent in the coming years. Apart from academic achievements the College has also put up sincere efforts to develop Entrepreneurship environment among our students. The college is situated at a distance of 6km from Muvattupuzha Bus Stations at Vazhakulam, The Pineapple city of Asia, in Muvattupuzha – Thodupuzha State Highway.</p>
         </div>	
 		<div id="Events" class="container-fluid bg-3  text-center">    
 			<div class="about-page"></br>
@@ -1000,75 +992,66 @@
 							    <br>Invitation Committee: Aravind S, Basil Baby 
 							</p>
 							<div class="container">
-								<div class="panel-group" id="meaccordion">
-							    	<div class="panel panel-default">
-								    	<div class="panel-heading">
-							        		<h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#meaccordion" href="#messcollapse1">1. MEXhaust (Auto show)</a>
-							        		</h4>
-							      		</div>
-								      	<div id="messcollapse1" class="panel-collapse collapse">
-								        	<div class="panel-body">An auto show, also known as a motor show or car show, is a public exhibition of current automobile models, debuts, concept cars, or out-of-production classics.</div>
-        									<div class="panel-footer"></br>Prize : 1L</br>Faculty in charge : Eldhose Paul, Lovin Varghese, Abin Paul</br>Student Coordinator: Gino sunny, Samuel Baby Mathew</div>
-								      	</div>
-								    </div>
-								    <div class="panel panel-default">
-								    	<div class="panel-heading">
-								       		<h4 class="panel-title">
-								       			<a data-toggle="collapse" data-parent="#meaccordion" href="#mecollapse2">2. Robotron</a>
-								       		</h4>
-								    	</div>
-								    	<div id="mecollapse2" class="panel-collapse collapse">
-								       		<div class="panel-body">A team may consist of 3 to 5 member Participants. These participants can be from same or different institutes.</br><strong>(1) Robo-race</strong></br>The maximum speed to beat another  machines on the given track to reach the final destination in minimum time.<br>Coordinator: Mishal musthafa, Jesbin Jose<br><strong>(2) Line Tracer</strong><br>An autonomous robot that can follow a white lined path placed over a black background.<br>Coordinator: Geo James, Nithin J Vattapara<br><strong> (3)Robo war</strong><br>All the robots with wireless control should be able to change frequencies (if required) or coded channels to prevent any radio conflicts , it may be changed before the start of the match to avoid frequency interference with other teams.<br>Rules:<br>1) The Robot may be wired or wireless.<br>2) IC engines, Inflammable, chemical, explosive weapons should not be used. Pneumatic devices are not   allowed.<br>3) For wired robot the wires should be slack at all times. The wires coming out of the robot should be   stacked as a single unit and must be properly insulated.<br>4) Batteries, if used, should not be damaged and leak-proof, else, it may lead to disqualification.<br>5) All decisions made by the committee and judges will be final<br>Coordinator: Bijo Peter, Rolvin Biju</div>
-        									<div class="panel-footer"></br>First Prize : 25K</br>Faculty in charge : Rakesh Jose, Varun</br>Student Coordinator: Vignesh M, Martin Tom</div>
-								    	</div>
-							    	</div>
-							    	<div class="panel panel-default">
-							      		<div class="panel-heading">
-							        		<h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#meaccordion" href="#mecollapse3">3. Mech Zone</a>
-							        		</h4>
-							      		</div>
-							      		<div id="mecollapse3" class="panel-collapse collapse">
-							        		<div class="panel-body">Exhibition and on spot events.<br> (1) Mechathelon (Games)<br>(2)Assembly War</div>
-        									<div class="panel-footer"></br>Faculty in charge : Arun K R, Arun Raphel</br>Student Coordinator: Betsin Alosious, Amal k Sasi, Steffin Reji</br>Art Works: Augustine Dani Jose, Aravind Raj</div>
-							      		</div>
-							    	</div>
-							    	<div class="panel panel-default">
-							      		<div class="panel-heading">
-							        		<h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#meaccordion" href="#mecollapse4">4. Ultimate Engineer</a>
-							        		</h4>
-							      		</div>
-							      		<div id="mecollapse4" class="panel-collapse collapse">
-							        		<div class="panel-body">Brush your skills,present your technical and unveil yourself via aptitude test,written rounds,task completion and an onstage event.acquire the diadem of BEST ENGINEER.</div>
-        									<div class="panel-footer"></br>First Prize : 6K</br>Faculty in charge :Eldhose Kurian, Sandeep</br>Student Coordinator: Yeldho Peter, Jacob kuriachan</div>
-							      		</div>
-							    	</div>
-							    	<div class="panel panel-default">
-							      		<div class="panel-heading">
-							        		<h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#meaccordion" href="#mecollapse5">5. Sristi (Project Presentation)</a>
+                            	<div class="panel-group">
+    								<div class="panel panel-default">
+      									<div class="panel-heading">
+        									<h4 class="panel-title">
+          										<a data-toggle="collapse" href="#collapse1">1. MEXhaust (Auto show)</a>
         									</h4>
       									</div>
-      									<div id="mecollapse5" class="panel-collapse collapse">
+      									<div id="collapse1" class="panel-collapse collapse">
+        									<div class="panel-body">An auto show, also known as a motor show or car show, is a public exhibition of current automobile models, debuts, concept cars, or out-of-production classics.</div>
+        									<div class="panel-footer"></br>Prize : 1L</br>Faculty in charge : Eldhose Paul, Lovin Varghese, Abin Paul</br>Student Coordinator: Gino sunny, Samuel Baby Mathew</div>
+      									</div>
+      									</div>
+      									<div class="panel-heading">
+        									<h4 class="panel-title">
+          										<a data-toggle="collapse" href="#collapse2">2. Robotron</a>
+        									</h4>
+      									</div>
+      									<div id="collapse2" class="panel-collapse collapse">
+        									<div class="panel-body">A team may consist of 3 to 5 member Participants. These participants can be from same or different institutes.</br><strong>(1) Robo-race</strong></br>The maximum speed to beat another  machines on the given track to reach the final destination in minimum time.<br>Coordinator: Mishal musthafa, Jesbin Jose<br><strong>(2) Line Tracer</strong><br>An autonomous robot that can follow a white lined path placed over a black background.<br>Coordinator: Geo James, Nithin J Vattapara<br><strong> (3)Robo war</strong><br>All the robots with wireless control should be able to change frequencies (if required) or coded channels to prevent any radio conflicts , it may be changed before the start of the match to avoid frequency interference with other teams.<br>Rules:<br>1) The Robot may be wired or wireless.<br>2) IC engines, Inflammable, chemical, explosive weapons should not be used. Pneumatic devices are not   allowed.<br>3) For wired robot the wires should be slack at all times. The wires coming out of the robot should be   stacked as a single unit and must be properly insulated.<br>4) Batteries, if used, should not be damaged and leak-proof, else, it may lead to disqualification.<br>5) All decisions made by the committee and judges will be final<br>Coordinator: Bijo Peter, Rolvin Biju</div>
+        									<div class="panel-footer"></br>First Prize : 25K</br>Faculty in charge : Rakesh Jose, Varun</br>Student Coordinator: Vignesh M, Martin Tom</div>
+      									</div>
+      									<div class="panel-heading">
+        									<h4 class="panel-title">
+          										<a data-toggle="collapse" href="#collapse3">3. Mech Zone</a>
+        									</h4>
+      									</div>
+      									<div id="collapse3" class="panel-collapse collapse">
+        									<div class="panel-body">Exhibition and on spot events.<br> (1) Mechathelon (Games)<br>(2)Assembly War</div>
+        									<div class="panel-footer"></br>Faculty in charge : Arun K R, Arun Raphel</br>Student Coordinator: Betsin Alosious, Amal k Sasi, Steffin Reji</br>Art Works: Augustine Dani Jose, Aravind Raj</div>
+      									</div>
+      									<div class="panel-heading">
+        									<h4 class="panel-title">
+          										<a data-toggle="collapse" href="#collapse4">4. Ultimate Engineer</a>
+        									</h4>
+      									</div>
+      									<div id="collapse4" class="panel-collapse collapse">
+        									<div class="panel-body">Brush your skills,present your technical and unveil yourself via aptitude test,written rounds,task completion and an onstage event.acquire the diadem of BEST ENGINEER.</div>
+        									<div class="panel-footer"></br>First Prize : 6K</br>Faculty in charge :Eldhose Kurian, Sandeep</br>Student Coordinator: Yeldho Peter, Jacob kuriachan</div>
+      									</div>
+      									<div class="panel-heading">
+        									<h4 class="panel-title">
+          										<a data-toggle="collapse" href="#collapse5">5. Sristi (Project Presentation)</a>
+        									</h4>
+      									</div>
+      									<div id="collapse5" class="panel-collapse collapse">
         									<div class="panel-body">Participants can present their project models and exhibit it. The best project will be awarded. The decisions made by the committee and judges will be final.</div>
         									<div class="panel-footer"></br>First Prize : 6K</br>Faculty in charge : Tijo Jose, Aakash Paul Savio</br>Student Coordinator: Josemon George, Rahul Jose</div>
       									</div>
-							      	</div>
-							    	<div class="panel panel-default">
-							      		<div class="panel-heading">
-							        		<h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#meaccordion" href="#mecollapse6">6. Prakalpa (Paper Presentation)</a>
+      									<div class="panel-heading">
+        									<h4 class="panel-title">
+          										<a data-toggle="collapse" href="#collapse6">6. Prakalpa (Paper Presentation)</a>
         									</h4>
       									</div>
-      									<div id="mecollapse6" class="panel-collapse collapse">
-        									<div class="panel-body"><strong>TIME</br>10:30am - 4:00pm</br>VENUE: IC LAB &AMP; B-203</strong></div>
-        									<div class="panel-footer"></br>First Prize : 4.5K</br>Faculty in charge : Mrs.Anitta Thomas (9496825096)</br>Student Coordinator: Algin George (9847574865) (S6 EC B)</br>Irene George (9048857640) (S6 EC B)</div>
+      									<div id="collapse6" class="panel-collapse collapse">
+        									<div class="panel-body">Participants will be given 10 minutes for presentation and thereafter 5 minutes for interaction.<br>ELIGIBILITY: Students of Btech/M.tech/MBA from AICTE approved Colleges are eligible to participate in the program.</div>
+        									<div class="panel-footer"></br>First Prize : 7K</br>Faculty in charge : Sajan T John, Joby</br>Student Coordinator: Amal Joshy, Allen Francis Raju</div>
       									</div>
-							      	</div>
-							  	</div> 
-							</div>
+    								</div>
+  								</div>
+                            </div>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
