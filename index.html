@@ -4,12 +4,11 @@
 	<title>BODHI 2k17</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./animate.css">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/flipclock.css">
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Cookie|Great+Vibes|Luckiest+Guy|Rock+Salt|Kreon" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Acme|Noticia+Text" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cookie|Great+Vibes|Luckiest+Guy|Rock+Salt|Kreon" rel="stylesheet">
@@ -21,7 +20,7 @@
 		});
 
 	</script>
-	
+	 <script src="./js/flipclock.min.js"></script>
 	<style>
 	a:link {
 		color: #f4511e !important;
@@ -35,7 +34,7 @@
 	a:active {
 	    color: #f45130;
 	}
-
+	
 	body {
       	font: 400 15px Lato, sans-serif;
       	line-height: 1.8;
@@ -54,6 +53,14 @@
       	margin-bottom: 30px;
       	font-family: 'Carter One', cursive;
   	}
+
+	#portfolio div{
+		padding:10px;
+	}
+
+	#portfolio div img{
+		margin:auto;
+	}
 
   	h4 {
       	font-size: 19px;
@@ -211,8 +218,18 @@
     font-family: Montserrat;
     src: url("fonts/Montserrat-ExtraLight.otf") format("opentype");
 	}
+
+	@font-face {
+			font-family: CLB;
+			src: url("fonts/clb.ttf") format("truetype");
+	}
+
 	.customfont { 
     font-family: "Montserrat" !important;
+	}
+
+	.champagne {
+		font-family: "CLB" !important;
 	}
 
 	.service-box p {
@@ -249,6 +266,11 @@
 	    text-align: center;
 	    transform: translateY(-50%);
 	}
+
+	.your-clock {
+        margin: auto;
+        max-width: 60%;
+    }
 
 	.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 	.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
@@ -423,17 +445,32 @@
 		</div>
 	</div>
 
+	<div class="container-fluid hidden-xs hidden-sm center-block">
+                <div style="" class="well your-clock flip-clock-wrapper" style="background-color: #FFFFFF;
+	border: 0px solid #FFFFFF;border-radius: 0px;"><span class="flip-clock-divider days"><span class="flip-clock-label">Days</span></span><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">-</div></div><div class="down"><div class="shadow"></div><div class="inn">-</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">-</div></div><div class="down"><div class="shadow"></div><div class="inn">-</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">3</div></div><div class="down"><div class="shadow"></div><div class="inn">3</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">4</div></div><div class="down"><div class="shadow"></div><div class="inn">4</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">7</div></div><div class="down"><div class="shadow"></div><div class="inn">7</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">8</div></div><div class="down"><div class="shadow"></div><div class="inn">8</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">6</div></div><div class="down"><div class="shadow"></div><div class="inn">6</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">-</div></div><div class="down"><div class="shadow"></div><div class="inn">-</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">-</div></div><div class="down"><div class="shadow"></div><div class="inn">-</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">1</div></div><div class="down"><div class="shadow"></div><div class="inn">1</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">1</div></div><div class="down"><div class="shadow"></div><div class="inn">1</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">6</div></div><div class="down"><div class="shadow"></div><div class="inn">6</div></div></a></li></ul><span class="flip-clock-divider hours"><span class="flip-clock-label">Hours</span><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">-</div></div><div class="down"><div class="shadow"></div><div class="inn">-</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">-</div></div><div class="down"><div class="shadow"></div><div class="inn">-</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">1</div></div><div class="down"><div class="shadow"></div><div class="inn">1</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">2</div></div><div class="down"><div class="shadow"></div><div class="inn">2</div></div></a></li></ul><span class="flip-clock-divider minutes"><span class="flip-clock-label">Minutes</span><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">8</div></div><div class="down"><div class="shadow"></div><div class="inn">8</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">-</div></div><div class="down"><div class="shadow"></div><div class="inn">-</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">-</div></div><div class="down"><div class="shadow"></div><div class="inn">-</div></div></a></li></ul><span class="flip-clock-divider seconds"><span class="flip-clock-label">Seconds</span><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">1</div></div><div class="down"><div class="shadow"></div><div class="inn">1</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">2</div></div><div class="down"><div class="shadow"></div><div class="inn">2</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">2</div></div><div class="down"><div class="shadow"></div><div class="inn">2</div></div></a></li><li class="flip-clock-active"><a href="#"><div class="up"><div class="shadow"></div><div class="inn">3</div></div><div class="down"><div class="shadow"></div><div class="inn">3</div></div></a></li></ul></div>
+            </div>
+
 	<div id="About" class='container-fluid vjc-description  about-page'>
 			<br>
-            <h2 class='text-center'>About VJCET</h2>
+            <h2 class='text-center champagne'>About VJCET</h2>
             <br>
             <br>
             <div class='col-md-6 text-center center-block'>
                 <img class='img-responsive' src="./images/colg.jpg">
             </div>
             <p class='col-md-6 customfont'>Viswajyothi is the lamp of God which brings light to the whole world. It aims to convey glow for the whole world and to bring all to radiance from darkness. "Service of GOD through service of Humanity" is the driving motto of the Kothamangalam Diocese. Viswajyothi College of Engineering &amp; Technology is yet another hallmark of the commitment and experience of the Kothamangalam Diocese in the field of education. Our Vision Moulding Engineers par Excellence with Integrity Fairness and Human Values aims to mould Engineers for tomorrow for the welfare of mankind and Society. Viswajyothi College of Engineering and Technology is the one of the first Self Financing Engineering college in the state which started working in June 2001. The developing infrastructure of the college is truly bound to make the campus, internationally competent in the coming years. Apart from academic achievements the College has also put up sincere efforts to develop Entrepreneurship environment among our students. The college is situated at a distance of 6km from Muvattupuzha Bus Stations at Vazhakulam, The Pineapple city of Asia, in Muvattupuzha – Thodupuzha State Highway.</p>
-        </div>	
-		<div id="Events" class="container-fluid bg-3  text-center">    
+    </div>	
+    <div id="Bodhi" class='container-fluid vjc-description  about-page'>
+			<br>
+            <h2 class='text-center champagne'>About BODHI</h2>
+            <br>
+            <br>
+            <div class='col-md-6 text-center center-block'>
+                <img class='img-responsive' src="./images/colg.jpg">
+            </div>
+            <p class='col-md-6 customfont'>Bodhi is blah blah blah and blah. "Service of GOD through service of Humanity" is the driving motto of the Kothamangalam Diocese. Viswajyothi College of Engineering &amp; Technology is yet another hallmark of the commitment and experience of the Kothamangalam Diocese in the field of education. Our Vision Moulding Engineers par Excellence with Integrity Fairness and Human Values aims to mould Engineers for tomorrow for the welfare of mankind and Society. Viswajyothi College of Engineering and Technology is the one of the first Self Financing Engineering college in the state which started working in June 2001. The developing infrastructure of the college is truly bound to make the campus, internationally competent in the coming years. Apart from academic achievements the College has also put up sincere efforts to develop Entrepreneurship environment among our students. The college is situated at a distance of 6km from Muvattupuzha Bus Stations at Vazhakulam, The Pineapple city of Asia, in Muvattupuzha – Thodupuzha State Highway.</p>
+    </div>	
+	<div id="Events" class="container-fluid bg-3  text-center">    
 			<div class="about-page"></br>
 	  			<h2>EVENTS</h2>	
 			</div>
@@ -609,7 +646,7 @@
                         <div class="modal-body">
                             <h2>DEPARTMENT OF CIVIL ENGINEERING</h2>
                             <hr class="star-primary">
-                            <img src="./images/ce.jpg" class="img-responsive img-centered" alt="CE ENGINEERING" align="center">
+                            <img src="./images/ce.jpg" class="img-responsive img-centered" alt="CE ENGINEERING">
                             <p>Staff In-Charge: Abhijith<br>Student Coordinator: Ajay Balan</p>
                             <div class="container">
   								<div class="panel-group" id="accordion">
@@ -805,7 +842,7 @@
                         <div class="modal-body">
                             <h2>DEPARTMENT OF ELECTRICAL &AMP; ELECTRONICS ENGINEERING</h2>
                             <hr class="star-primary">
-                            <img src="./images/eee.jpg" class="img-responsive img-centered" alt="EEE ENGINEERING" align="center">
+                            <img src="./images/eee.jpg" class="img-responsive img-centered" alt="EEE ENGINEERING" align="center" style="margin: auto;">
                             <p>Faculty in charge: Jomu M George</br>Convener: Saudh K Ali (8089885564)</p>
                             <div class="container">
   								<div class="panel-group" id="eeeaccordion">
@@ -876,8 +913,13 @@
                         <div class="modal-body">
                             <h2>DEPARTMENT OF ELECTRONICS &AMP; COMMUNICATION ENGINEERING</h2>
                             <hr class="star-primary">
+<<<<<<< HEAD
+                            <img src="./images/ec.jpg" class="img-responsive img-centered" alt="ECE ENGINEERING" align="center" style="margin: auto;">
+                            <p>STAFF CO-ORDINATOR: MRS.ANU C KUNJACHAN  (9633360844)</br>ASSISTANT STAFF CO-ORDINATOR: MRS.MINU GEORGE (9605563309)</br>STUDENT CO-ORDINATORS: ROMY BYJU (9946495007) (S8 EC A)</br>ASSISTANT STUDENT CO-ORDINATORS: ANN MARY THOMAS (9496744406) (S6 EC A)</p>
+=======
                             <img src="./images/ec.jpg" class="img-responsive img-centered" alt="ECE ENGINEERING" align="center">
                             <p>Staff In-Charge: Mrs.Anu C Kunjachan  (9633360844)</br>Assistant Staff In-Charge: Mrs.Minu George (9605563309)</br>Student Coordinators: Romy Byju (9946495007) (S8 EC A)</br>Assistant Student Coordinators: Ann Mary Thomas (9496744406) (S6 EC A)</p>
+>>>>>>> 2949fd5b6cf29a9cd5c238824e2ef6d136f1b10c
                             <div class="container">
 								<div class="panel-group" id="eceaccordion">
 							    	<div class="panel panel-default">
@@ -991,8 +1033,13 @@
                         <div class="modal-body">
                             <h2>DEPARTMENT OF MECHANICAL ENGINEERING</h2>
                             <hr class="star-primary">
+<<<<<<< HEAD
+                            <img src="./images/me.jpg" class="img-responsive img-centered" alt="ME ENGINEERING" align="center" style="margin: auto;">
+							<p> <br>Staff in Charge: Frenosh k Francis, Ajo Issac John
+=======
                             <img src="./images/me.jpg" class="img-responsive img-centered" alt="ME ENGINEERING" align="center">
 							<p> <br>Staff In-Charge: Frenosh k Francis, Ajo Issac John
+>>>>>>> 2949fd5b6cf29a9cd5c238824e2ef6d136f1b10c
 							    <br>Student coordinators: Albin Johnson, Ebin Eldhose
 							    <br>Documentation Committee: Nibin B, Nithish
 							    <br>Discipline Committee: Vinoj k, Unnikrishnan T G
@@ -1090,7 +1137,7 @@
                         <div class="modal-body">
                             <h2>DEPARTMENT OF INFORMATION TECHNOLOGY</h2>
                             <hr class="star-primary">
-                            <img src="./images/mba.jpg" class="img-responsive img-centered" alt="IT ENGINEERING" align="center">
+                            <img src="./images/mba.jpg" class="img-responsive img-centered" alt="IT ENGINEERING" align="center" style="margin: auto;">
                             <p>Staff In-charge: Diana Baby<br>Student Coordinator: Tomin (8281208703)</p>
                             <div class="container">
 								<div class="panel-group" id="itaccordion">
@@ -1350,7 +1397,8 @@
 		$('#modal1').modal();
 	</script>
 
-	<script>
+
+	 <script>
 		$(document).ready(function(){
   			$(".navbar a, footer a[href='#page-top").on('click', function(event) {
     		if (this.hash !== "") {
@@ -1381,6 +1429,19 @@
   		ga('create', 'UA-91116103-1', 'auto');
   		ga('send', 'pageview');
 	</script>
+
+	<script>
+
+    var date = new Date(2017, 1, 17);
+    var now = new Date();
+    var diff = (date.getTime() / 1000) - (now.getTime() / 1000);
+
+    var clock = $('.your-clock').FlipClock(diff, {
+        clockFace: 'DailyCounter',
+        countdown: true
+    });
+    clock.setCountdown(true);
+    </script>
 
 </body>
 </html>
