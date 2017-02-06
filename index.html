@@ -385,6 +385,9 @@
 	<div class="jumbotron text-center">
 		<div id="Home" class="carousel slide" data-ride="carousel">
 	  	  	<div class="carousel-inner" role="listbox">
+	  	  		<audio loop autoplay class="audioDemo">
+	  	  			<source src="./music/Meditation.mp3" type="audio/mpeg">
+	  	  		</audio>
 	    	  	<div class="item active"></br></br>
 	      			<img src="./images/BodhiOrange.png" alt="bodhi">
 	    		</div></br></br></br>
@@ -1121,18 +1124,30 @@
     var elemBottom = elemTop + $elem.height();
 
     return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
-}
+	}
 
-function checkAnimation() {
-    var $elem = $('.bar .level');
-    if ($elem.hasClass('start')) return;
+	function checkAnimation() {
+	    var $elem = $('.bar .level');
+	    if ($elem.hasClass('start')) return;
 
-        $elem.addClass('start');
+	        $elem.addClass('start');
+	    }
+	}
+	$(window).scroll(function(){
+	    checkAnimation();
+	});
+
+	$('#rot_hold').hide();
+    var is_on=0,sound_off=0;
+    $('#sound').click(function(){
+        toggleMuteAudio();
+        $('#sound_on').toggle(200);
+        $('#sound_off').toggle(200);
+    });
+    function toggleMuteAudio(){
+    $(".audioDemo").prop("muted",!$(".audioDemo").prop("muted"));
     }
-}
-$(window).scroll(function(){
-    checkAnimation();
-});
+
 	</script>
 
 	<script>
@@ -1197,6 +1212,13 @@ $(window).scroll(function(){
     			});
   			});
 		})
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  		ga('create', 'UA-91116103-1', 'auto');
+  		ga('send', 'pageview');
 	</script>
 
 </body>
