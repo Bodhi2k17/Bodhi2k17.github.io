@@ -42,15 +42,16 @@
   	}
   	h1{
   		font-size: 27px;
-      	font-family: "Kingsmen";
+  		font-family: 'Sansita', sans-serif;
   		color: #f4511e;
   	}
   	h2 {
-      	font-size: 40px;
+      	font-size: 50px;
+      	text-transform: uppercase;
       	color: #303030;
       	font-weight: 600;
       	margin-bottom: 30px;
-      	font-family: "CLB";
+      	font-family: 'Carter One', cursive;
   	}
 
 	#portfolio div{
@@ -220,17 +221,16 @@
 	}
 
 	@font-face {
-    font-family: Kingsmen;
-    src: url("fonts/Kingsmen.otf") format("opentype");
-	}
-
-	@font-face {
 			font-family: CLB;
 			src: url("fonts/clb.ttf") format("truetype");
 	}
 
-	.montserrat { 
+	.customfont { 
     font-family: "Montserrat" !important;
+	}
+
+	.champagne {
+		font-family: "CLB" !important;
 	}
 
 	.service-box p {
@@ -456,23 +456,23 @@
 
 	<div id="About" class='container-fluid vjc-description  about-page'>
 			<br>
-            <h2 class='text-center'>About VJCET</h2>
+            <h2 class='text-center champagne'>About VJCET</h2>
             <br>
             <br>
             <div class='col-md-6 text-center center-block'>
                 <img class='img-responsive' src="./images/colg.jpg">
             </div>
-            <p class='col-md-6 montserrat'>Viswajyothi is the lamp of God which brings light to the whole world. It aims to convey glow for the whole world and to bring all to radiance from darkness. "Service of GOD through service of Humanity" is the driving motto of the Kothamangalam Diocese. Viswajyothi College of Engineering &amp; Technology is yet another hallmark of the commitment and experience of the Kothamangalam Diocese in the field of education. Our Vision Moulding Engineers par Excellence with Integrity Fairness and Human Values aims to mould Engineers for tomorrow for the welfare of mankind and Society. Viswajyothi College of Engineering and Technology is the one of the first Self Financing Engineering college in the state which started working in June 2001. The developing infrastructure of the college is truly bound to make the campus, internationally competent in the coming years. Apart from academic achievements the College has also put up sincere efforts to develop Entrepreneurship environment among our students. The college is situated at a distance of 6km from Muvattupuzha Bus Stations at Vazhakulam, The Pineapple city of Asia, in Muvattupuzha – Thodupuzha State Highway.</p>
+            <p class='col-md-6 customfont'>Viswajyothi is the lamp of God which brings light to the whole world. It aims to convey glow for the whole world and to bring all to radiance from darkness. "Service of GOD through service of Humanity" is the driving motto of the Kothamangalam Diocese. Viswajyothi College of Engineering &amp; Technology is yet another hallmark of the commitment and experience of the Kothamangalam Diocese in the field of education. Our Vision Moulding Engineers par Excellence with Integrity Fairness and Human Values aims to mould Engineers for tomorrow for the welfare of mankind and Society. Viswajyothi College of Engineering and Technology is the one of the first Self Financing Engineering college in the state which started working in June 2001. The developing infrastructure of the college is truly bound to make the campus, internationally competent in the coming years. Apart from academic achievements the College has also put up sincere efforts to develop Entrepreneurship environment among our students. The college is situated at a distance of 6km from Muvattupuzha Bus Stations at Vazhakulam, The Pineapple city of Asia, in Muvattupuzha – Thodupuzha State Highway.</p>
     </div>	
     <div id="Bodhi" class='container-fluid vjc-description  about-page'>
 			<br>
-            <h2 class='text-center'>About BODHI</h2>
+            <h2 class='text-center champagne'>About BODHI</h2>
             <br>
             <br>
             <div class='col-md-6 text-center img-center center-block'>
                 <img class='img-responsive' src="./images/BodhiOrange.png" height="779" width="550">
             </div>
-            <p class='col-md-6 montserrat'>Bodhi is blah blah blah and blah. "Service of GOD through service of Humanity" is the driving motto of the Kothamangalam Diocese. Viswajyothi College of Engineering &amp; Technology is yet another hallmark of the commitment and experience of the Kothamangalam Diocese in the field of education. Our Vision Moulding Engineers par Excellence with Integrity Fairness and Human Values aims to mould Engineers for tomorrow for the welfare of mankind and Society. Viswajyothi College of Engineering and Technology is the one of the first Self Financing Engineering college in the state which started working in June 2001. The developing infrastructure of the college is truly bound to make the campus, internationally competent in the coming years. Apart from academic achievements the College has also put up sincere efforts to develop Entrepreneurship environment among our students. The college is situated at a distance of 6km from Muvattupuzha Bus Stations at Vazhakulam, The Pineapple city of Asia, in Muvattupuzha – Thodupuzha State Highway.</p>
+            <p class='col-md-6 customfont'>Bodhi is blah blah blah and blah. "Service of GOD through service of Humanity" is the driving motto of the Kothamangalam Diocese. Viswajyothi College of Engineering &amp; Technology is yet another hallmark of the commitment and experience of the Kothamangalam Diocese in the field of education. Our Vision Moulding Engineers par Excellence with Integrity Fairness and Human Values aims to mould Engineers for tomorrow for the welfare of mankind and Society. Viswajyothi College of Engineering and Technology is the one of the first Self Financing Engineering college in the state which started working in June 2001. The developing infrastructure of the college is truly bound to make the campus, internationally competent in the coming years. Apart from academic achievements the College has also put up sincere efforts to develop Entrepreneurship environment among our students. The college is situated at a distance of 6km from Muvattupuzha Bus Stations at Vazhakulam, The Pineapple city of Asia, in Muvattupuzha – Thodupuzha State Highway.</p>
     </div>	
 	<div id="Events" class="container-fluid bg-3  text-center">    
 			<div class="about-page"></br>
@@ -1296,7 +1296,7 @@
   		<h2 align="center">CONTACT</h2>
   		<div class="row" align="center">
       		<p><span class="glyphicon glyphicon-map-marker"></span> Vazhakulam, Kerala</p>
-    		<p><span class="glyphicon glyphicon-phone"></span> Jose Francis (+91 94954 2659)</p>
+    		<p><span class="glyphicon glyphicon-phone"></span> Jose Francis (+91 94954 2659)/p>
       		<p><span class="glyphicon glyphicon-envelope"></span> bodhiofficial@gmail.com</p>
     	</div>
 	</div>
