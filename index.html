@@ -13,6 +13,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Acme|Noticia+Text" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cookie|Great+Vibes|Luckiest+Guy|Rock+Salt|Kreon" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Acme|Noticia+Text" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Bitter|Carter+One|Merienda|Sansita" rel="stylesheet">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
+	
 	<script>
 		
 		$(function () {
@@ -238,10 +240,10 @@
 	}
 
 	.portfolio-box {
-	    display: block;
+	    /*display: block;
 	    position: relative;
 	    margin: 0 auto;
-	    max-width: 650px;
+	    max-width: 650px;*/
 	}
 
 	.portfolio-box .portfolio-box-caption {
@@ -356,7 +358,7 @@
             -webkit-transform: translateY(0%);
     	}
   	}
-  	@media screen and (max-width: 768px) {
+  	/*@media screen and (max-width: 768px) {
     	.col-sm-4 {
       		text-align: center;
       		margin: 25px 0;
@@ -365,7 +367,7 @@
         	width: 100%;
         	margin-bottom: 35px;
     	}
-  	}
+  	}*/
   	@media screen and (max-width: 480px) {
     	.logo {
         	font-size: 150px;
@@ -408,11 +410,15 @@
 		margin:0 auto;
 	}
   	</style>
+
   	<link rel="shortcut icon" type="image/x-icon" href="./images/logo.png" />
 </head>
 
 <body id="page-top" class="index" data-spy="scroll" data-target=".navbar" data-offset="50">
-	<nav class="navbar navbar-default navbar-fixed-top ">
+
+
+
+	<nav class="navbar navbar-inverse navbar-fixed-top ">
   		<div class="container-fluid">
     		<div class="navbar-header">
     			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -488,10 +494,15 @@
 		      	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 		      	<li data-target="#myCarousel" data-slide-to="1"></li>
 		      	<li data-target="#myCarousel" data-slide-to="2"></li>
+		      	<li data-target="#myCarousel" data-slide-to="3"></li>
 		    </ol>
 		    <!-- Wrapper for slides -->
 		    <div class="carousel-inner" role="listbox">
 			    <div class="item active">
+			    	<img src="./images/General.jpeg" alt=" " width="500" height="400">
+			    </div>
+
+			    <div class="item">
 			    	<img src="./images/vj.jpg" alt=" " width="500" height="400">
 			    </div>
 
@@ -524,7 +535,7 @@
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
                     <a href="#portfolioModal1" data-toggle="modal" class="portfolio-link portfolio-box">
-                        <img src="./images/ce.jpg" class="img-responsive" alt="Civil Engineering"  height="300" width="300" align="center">
+                        <img src="./images/ce.png" class="img-responsive img-circle" alt="Civil Engineering"  height="236" width="304" align="center">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -539,7 +550,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#portfolioModal2" data-toggle="modal" class="portfolio-link portfolio-box">
-                        <img src="./images/cs.jpg" class="img-responsive" alt="COMPUTER SCIENCE &AMP; ENGINEERING"  height="300" width="300" align="center">
+                        <img src="./images/cs.png" class="img-responsive img-circle" alt="COMPUTER SCIENCE &AMP; ENGINEERING"  height="236" width="304" align="center">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -554,7 +565,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#portfolioModal3" data-toggle="modal" class="portfolio-link portfolio-box">
-                        <img src="./images/eee.jpg" class="img-responsive" alt="ELECTRICAL &AMP; ELECTRONICS ENGINEERING"  height="300" width="300" align="center">
+                        <img src="./images/eee.png" class="img-responsive img-circle" alt="ELECTRICAL &AMP; ELECTRONICS ENGINEERING"  height="236" width="304" align="center">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -569,7 +580,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#portfolioModal4" data-toggle="modal" class="portfolio-link portfolio-box">
-                        <img src="./images/ec.jpg" class="img-responsive" alt="ELECTRONICS &AMP; COMMUNICATION ENGINEERING"  height="300" width="300" align="center">
+                        <img src="./images/ec.jpg" class="img-responsive img-circle" alt="ELECTRONICS &AMP; COMMUNICATION ENGINEERING"  height="236" width="304" align="center">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -584,7 +595,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#portfolioModal5" data-toggle="modal" class="portfolio-link portfolio-box">
-                        <img src="./images/me.jpg" class="img-responsive" alt=" MECHANICAL ENGINEERING" height="300" width="300" align="center">
+                        <img src="./images/me.png" class="img-responsive img-circle" alt=" MECHANICAL ENGINEERING" height="236" width="304" align="center">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -599,7 +610,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#portfolioModal6" data-toggle="modal" class="portfolio-link portfolio-box">
-                        <img src="./images/it.jpg" class="img-responsive" alt="INFORMATION TECHNOLOGY"  height="300" width="300" align="center">
+                        <img src="./images/it.png" class="img-responsive img-circle" alt="INFORMATION TECHNOLOGY"  height="236" width="304" align="center">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -617,7 +628,7 @@
 
                 <div class="col-lg-4 col-sm-6">
                     <a href="#portfolioModal7" data-toggle="modal" class="portfolio-link portfolio-box">
-                        <img src="./images/mba.jpg" class="img-responsive" alt="MBA"  height="300" width="300" align="center">
+                        <img src="./images/mba.jpg" class="img-responsive img-circle" alt="MBA"  height="236" width="300" align="center">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -650,7 +661,7 @@
                         <div class="modal-body">
                             <h2>DEPARTMENT OF CIVIL ENGINEERING</h2>
                             <hr class="star-primary">
-                            <img src="./images/ce.jpg" class="img-responsive img-centered" alt="CE ENGINEERING">
+                            <img src="./images/ce.png" class="img-responsive img-centered" alt="CE ENGINEERING">
                             <p>Staff In-Charge: Abhijith<br>Student Coordinator: Ajay Balan</p>
                             <div class="container">
   								<div class="panel-group" id="accordion">
@@ -743,7 +754,7 @@
                         <div class="modal-body">
                             <h2>DEPARTMENT OF COMPUTER SCIENCE &AMP; ENGINEERING</h2>
                             <hr class="star-primary">
-                            <img src="./images/cs.jpg" class="img-responsive img-centered" alt="CSE ENGINEERING" align="center">
+                            <img src="./images/cs.png" class="img-responsive img-centered" alt="CSE ENGINEERING" align="center">
                             <p> details</p>
                             <div class="container">
 							<div class="panel-group" id="csaccordion">
@@ -846,7 +857,7 @@
                         <div class="modal-body">
                             <h2>DEPARTMENT OF ELECTRICAL &AMP; ELECTRONICS ENGINEERING</h2>
                             <hr class="star-primary">
-                            <img src="./images/eee.jpg" class="img-responsive img-centered" alt="EEE ENGINEERING" align="center" style="margin: auto;">
+                            <img src="./images/eee.png" class="img-responsive img-centered" alt="EEE ENGINEERING" align="center" style="margin: auto;">
                             <p>Faculty in charge: Jomu M George</br>Convener: Saudh K Ali (8089885564)</p>
                             <div class="container">
   								<div class="panel-group" id="eeeaccordion">
@@ -917,13 +928,9 @@
                         <div class="modal-body">
                             <h2>DEPARTMENT OF ELECTRONICS &AMP; COMMUNICATION ENGINEERING</h2>
                             <hr class="star-primary">
-<<<<<<< HEAD
+
                             <img src="./images/ec.jpg" class="img-responsive img-centered" alt="ECE ENGINEERING" align="center" style="margin: auto;">
-                            <p>STAFF CO-ORDINATOR: MRS.ANU C KUNJACHAN  (9633360844)</br>ASSISTANT STAFF CO-ORDINATOR: MRS.MINU GEORGE (9605563309)</br>STUDENT CO-ORDINATORS: ROMY BYJU (9946495007) (S8 EC A)</br>ASSISTANT STUDENT CO-ORDINATORS: ANN MARY THOMAS (9496744406) (S6 EC A)</p>
-=======
-                            <img src="./images/ec.jpg" class="img-responsive img-centered" alt="ECE ENGINEERING" align="center">
                             <p>Staff In-Charge: Mrs.Anu C Kunjachan  (9633360844)</br>Assistant Staff In-Charge: Mrs.Minu George (9605563309)</br>Student Coordinators: Romy Byju (9946495007) (S8 EC A)</br>Assistant Student Coordinators: Ann Mary Thomas (9496744406) (S6 EC A)</p>
->>>>>>> 2949fd5b6cf29a9cd5c238824e2ef6d136f1b10c
                             <div class="container">
 								<div class="panel-group" id="eceaccordion">
 							    	<div class="panel panel-default">
@@ -1037,13 +1044,8 @@
                         <div class="modal-body">
                             <h2>DEPARTMENT OF MECHANICAL ENGINEERING</h2>
                             <hr class="star-primary">
-<<<<<<< HEAD
-                            <img src="./images/me.jpg" class="img-responsive img-centered" alt="ME ENGINEERING" align="center" style="margin: auto;">
-							<p> <br>Staff in Charge: Frenosh k Francis, Ajo Issac John
-=======
-                            <img src="./images/me.jpg" class="img-responsive img-centered" alt="ME ENGINEERING" align="center">
+                            <img src="./images/me.png" class="img-responsive img-centered" alt="ME ENGINEERING" align="center">
 							<p> <br>Staff In-Charge: Frenosh k Francis, Ajo Issac John
->>>>>>> 2949fd5b6cf29a9cd5c238824e2ef6d136f1b10c
 							    <br>Student coordinators: Albin Johnson, Ebin Eldhose
 							    <br>Documentation Committee: Nibin B, Nithish
 							    <br>Discipline Committee: Vinoj k, Unnikrishnan T G
@@ -1141,7 +1143,7 @@
                         <div class="modal-body">
                             <h2>DEPARTMENT OF INFORMATION TECHNOLOGY</h2>
                             <hr class="star-primary">
-                            <img src="./images/mba.jpg" class="img-responsive img-centered" alt="IT ENGINEERING" align="center" style="margin: auto;">
+                            <img src="./images/it.png" class="img-responsive img-centered" alt="IT ENGINEERING" align="center" style="margin: auto;">
                             <p>Staff In-charge: Diana Baby<br>Student Coordinator: Tomin (8281208703)</p>
                             <div class="container">
 								<div class="panel-group" id="itaccordion">
@@ -1325,6 +1327,15 @@
   		</a>
   		</div>
 	</footer>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="bootstrap/jquery.bootstrap-autohidingnavbar.min.js"></script>
+	<script>
+		$(".navbar-fixed-top").autoHidingNavbar({
+
+		});
+	</script>
 
 	<script>
 		function isElementInViewport(elem) {
