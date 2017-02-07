@@ -34,15 +34,12 @@
 	html {
 	  height: 100%;
 	}
-	body {
-	  background: #4ebdc0;
-	}
 	.countdown {
-	  margin: 50px auto;
-	  text-align: center;
-	  color: #fff;
+	  margin: 25px auto;
+	  text-align: right;
+	  color: #00E676;
 	  padding: 20px;
-	  margin-top: 50px;
+	  margin-top: 0px;
 	  font-family: 'Oswald', sans-serif;
 	  font-weight: 300;
 	}
@@ -54,15 +51,16 @@
 	  -webkit-border-radius: 50%;
 	  border-radius: 50%;
 	  font-size: 54px;
-	  width: 120px;
-	  height: 120px;
-	  line-height: 120px;
+	  width: 100px;
+	  height: 100px;
+	  line-height: 100px;
 	  text-align: center;
 	  position: relative;
 	  background: rgba(78, 189, 192, 0.15);
 	}
 	.countdown .time-circle:hover {
-	  background: #46babd;
+	  background: #FFF176;
+	  color: #000;
 	  -webkit-transition: background 0.3s;
 	  -moz-transition: background 0.3s;
 	  -ms-transition: background 0.3s;
@@ -73,6 +71,7 @@
 	  display: inline-block;
 	  font-size: 54px;
 	}
+	
 	.countdown .time-circle .time-name {
 	  font-size: 16px;
 	  font-family: 'Arial', sans-serif;
@@ -81,7 +80,7 @@
 	  width: 100%;
 	  left: 0;
 	  line-height: 16px;
-	  color: #000;
+	  color: #69F0AE;
 	  opacity: 0.2;
 	}
 	.countdown .time-circle .progress {
@@ -589,36 +588,33 @@
 	<div class="jumbotron text-center">
 		<div id="Home" class="carousel slide" data-ride="carousel">
 	  	  	<div class="carousel-inner" role="listbox">
-	  	  		<div id="sound">
-            		<span class="icon-volume-high" id="sound_on"></span>
-            		<span class="icon-volume-mute2" id="sound_off" style="display:none;"></span>
-        		</div>
 	  	  		<audio loop autoplay class="audioDemo">
 	  	  			<!--<source src="./music/Meditation.mp3" type="audio/mpeg">-->
 	  	  		</audio>
-	  	  		<div class="countdown text-center">
-
-			    <div class="time-circle">
-			      <div class="progress"></div>
-			      <span class="time hours"></span>
-			      <span class="time-name">hrs</span>
-			    </div>
-			    <span class="dots">:</span>
-			    <div class="time-circle">
-			      <div class="progress"></div>
-			      <span class="time minutes"></span>
-			      <span class="time-name">min</span>
-			    </div>
-			    <span class="dots">:</span>
-			    <div class="time-circle">
-			      <div class="progress"></div>
-			      <span class="time seconds"></span>
-			      <span class="time-name">sec</span>
-			    </div>
-			  </div>
-	    	  	<div class="item active"><br><br>
+	  	  		<div class="countdown text-center item active">
+	  	  		
+	  	  			<img src="./images/bodhi.png" alt="bodhi">
+				    <div class="time-circle">
+				      <div class="progress"></div>
+				      <span class="time hours"></span>
+				      <span class="time-name">hrs</span>
+				    </div>
+				    <span class="dots">:</span>
+				    <div class="time-circle">
+				      <div class="progress"></div>
+				      <span class="time minutes"></span>
+				      <span class="time-name">min</span>
+				    </div>
+				    <span class="dots">:</span>
+				    <div class="time-circle">
+				      <div class="progress"></div>
+				      <span class="time seconds"></span>
+				      <span class="time-name">sec</span>
+				    </div>
+				  </div>
+	    	  	<!--<div class="item active">
 	      			<img src="./images/bodhi.png" alt="bodhi">
-	    		</div><br><br><br>
+	    		</div>-->
 
 	    	</div>
 		</div>
@@ -1631,7 +1627,7 @@
 
   var Countdown = function(options) {
     $.extend(this, {
-      endDate: new Date(2017, 1, 17, 08, 00, 00, 0)
+      endDate: new Date(2017, 4, 26, 15, 02, 20, 0)
     }, options);
 
     this.cache();
