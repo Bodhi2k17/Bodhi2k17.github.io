@@ -590,6 +590,12 @@
 	  	  		<div class="countdown text-center item active">
 	  	  			<div class="time-circle">
 				      <div class="progress"></div>
+				      <span class="time weeks"></span>
+				      <span class="time-name">weeks</span>
+				    </div>
+				    <span class="dots">:</span>
+	  	  			<div class="time-circle">
+				      <div class="progress"></div>
 				      <span class="time days"></span>
 				      <span class="time-name">days</span>
 				    </div>
@@ -1627,7 +1633,7 @@
 
   var Countdown = function(options) {
     $.extend(this, {
-      endDate: new Date(2017, 02, 17, 08, 00, 00, 0)
+      endDate: new Date(2017, 01, 17, 08, 00, 00, 0)
     }, options);
 
     this.cache();
@@ -1653,6 +1659,7 @@
         $minutes = $('.minutes'),
         $hours = $('.hours')
         $days = $('.days');
+        $weeks = $('.weeks')
 
       function pad(number) {
         return (number < 10 ? '0' : '') + number
@@ -1682,11 +1689,13 @@
         $minutes.text(pad(getMinutes));
         $hours.text(pad(getHours));
         $days.text(pad(getDays));
+        $weeks.text(pad(getWeeks));
 
         setScale($secondsCircle, getSeconds);
         setScale($minutesCircle, getMinutes);
         setScale($hoursCircle, getHours);
         setScale($daysCircle, getDays);
+        setScale($weeksCircle, getWeeks);
 
         if (timeInSec <= 0) {
           clearInterval(setInterv);
