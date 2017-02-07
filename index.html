@@ -229,7 +229,7 @@
 			font-family: CLB;
 			src: url("fonts/clb.ttf") format("truetype");
 	}
-	
+
 	@keyframes rubberBand {
   		0% {transform: scale(1);}
   		30% {transform: scaleX(1.25) scaleY(0.75);}
@@ -241,19 +241,15 @@
   		animation-name: rubberBand;
 	}
 
-	@keyframes bounce {
-  		0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-  		40% {transform: translateY(-30px);}
-  		60% {transform: translateY(-15px);}
-	}
-	.bounce {
-  		animation-name: bounce;
-	}
-
 	.animated {
   		animation-duration: 1.5s;
-  		animation-fill-mode: backwards;
+  		animation-fill-mode: both;
   		animation-iteration-count: infinite;
+	}
+
+	.animatedNavBar {
+  		animation-duration: 1.5s;
+  		animation-fill-mode: both;
 	}
 
 	.montserrat {
@@ -341,11 +337,11 @@
   		text-align: left;
   		vertical-align: middle;
 	}
-	/*#bug{
+	#bug{
 		height: 100px;
 		width: 100px;
-		align-self: center;
-	}*/
+		margin: 0 auto;
+	}
 
   	#map {
         height: 400px;
@@ -452,9 +448,9 @@
     		</div>
     		<div class="collapse navbar-collapse" id="myNavbar">
       			<ul class="nav navbar-nav navbar-right ">
-        			<li class=" animated flash"><a href="#About">About</a></li>
-        			<li class=" animated flash"><a href="#Events">Events</a></li>
-        			<li class=" animated flash"><a href="#Contact">Contact</a></li>
+        			<li class=" animatedNavBar flash"><a href="#About">About</a></li>
+        			<li class=" animatedNavBar flash"><a href="#Events">Events</a></li>
+        			<li class=" animatedNavBar flash"><a href="#Contact">Contact</a></li>
       			</ul>
     		</div>
   		</div>
@@ -1345,7 +1341,7 @@
     </script>
 
 	<footer class="container-fluid text-center">
-	<div id="bug" class="animated bounce">
+	<div id="bug" class="animated rubberBand">
   		<a href="#page-top" title="Go to Top" class="container-fluid">
     		<span class="glyphicon glyphicon-chevron-up"></span>
   		</a>
