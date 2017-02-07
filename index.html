@@ -241,21 +241,16 @@
   		animation-name: rubberBand;
 	}
 
-	@keyframes bounce {
-  		0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-  		40% {transform: translateY(-30px);}
-  		60% {transform: translateY(-15px);}
-	}
-	.bounce {
-  		animation-name: bounce;
-	}
-
 	.animated {
   		animation-duration: 1.5s;
-  		animation-fill-mode: backwards;
+  		animation-fill-mode: both;
   		animation-iteration-count: infinite;
 	}
 
+	.animatedNavBar {
+  		animation-duration: 1.5s;
+  		animation-fill-mode: both;
+	}
 	.montserrat {
     font-family: "Montserrat" !important;
 	}
@@ -341,11 +336,11 @@
   		text-align: left;
   		vertical-align: middle;
 	}
-	/*#bug{
+	#bug{
 		height: 100px;
 		width: 100px;
-		align-self: center;
-	}*/
+		margin: 0 auto;
+	}
 
   	#map {
         height: 400px;
@@ -452,9 +447,9 @@
     		</div>
     		<div class="collapse navbar-collapse" id="myNavbar">
       			<ul class="nav navbar-nav navbar-right ">
-        			<li class=" animated flash"><a href="#About">About</a></li>
-        			<li class=" animated flash"><a href="#Events">Events</a></li>
-        			<li class=" animated flash"><a href="#Contact">Contact</a></li>
+        			<li class=" animatedNavBar flash"><a href="#About">About</a></li>
+        			<li class=" animatedNavBar flash"><a href="#Events">Events</a></li>
+        			<li class=" animatedNavBar flash"><a href="#Contact">Contact</a></li>
       			</ul>
     		</div>
   		</div>
@@ -1324,7 +1319,11 @@
       		<p><span class="glyphicon glyphicon-map-marker"></span> Vazhakulam, Kerala</p>
     		<p><span class="glyphicon glyphicon-phone"></span> Jose Francis (+91 94954 2659)</p>
       		<p><span class="glyphicon glyphicon-envelope"></span> bodhiofficial@gmail.com</p>
+<<<<<<< HEAD
             <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fbodhitechfest%2F&width=51&layout=box_count&action=like&size=small&show_faces=false&share=true&height=65&appId=764622547018455" width="51" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+=======
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fbodhitechfest%2F&width=450&layout=standard&action=like&size=small&show_faces=false&share=true&height=35&appId=764622547018455" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+>>>>>>> 6204964ebd093343f74e8efba1d135b03f2ffdd1
 
     	</div>
 	</div>
@@ -1349,7 +1348,11 @@
     </script>
 
 	<footer class="container-fluid text-center">
+<<<<<<< HEAD
 	<div id="bug" class="animated bounce">
+=======
+	<div id="bug" class="animated rubberBand">
+>>>>>>> 6204964ebd093343f74e8efba1d135b03f2ffdd1
   		<a href="#page-top" title="Go to Top" class="container-fluid">
     		<span class="glyphicon glyphicon-chevron-up"></span>
   		</a>
