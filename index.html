@@ -100,8 +100,8 @@
 	}
 	.countdown .time-circle .progress:after {
 	  content: '';
-	  width: 6px;
-	  height: 70px;
+	  width: 2px;
+	  height: 5px;
 	  background: #fff;
 	  position: absolute;
 	  -webkit-transform: rotate(0deg);
@@ -450,16 +450,9 @@
 	  	padding: 0!important;
 	}
 
-	.modal:before {
-	  	content: '';
-	  	display: inline-block;
-	  	height: 100%;
-	  	vertical-align: middle;
-	  	margin-right: -4px;
-	}
+	
 
 	.modal-content {
-  		display: inline-block;
   		text-align: left;
   		vertical-align: middle;
 	}
@@ -589,11 +582,13 @@
 		<div id="Home" class="carousel slide" data-ride="carousel">
 	  	  	<div class="carousel-inner" role="listbox">
 	  	  		<audio loop autoplay class="audioDemo">
-	  	  			<!--<source src="./music/Meditation.mp3" type="audio/mpeg">-->
+	  	  			<source src="./music/Meditation.mp3" type="audio/mpeg">
 	  	  		</audio>
+	  	  		<div class="item active">
+	      			<img src="./images/bodhi.png" alt="bodhi">
+	    		</div>
 	  	  		<div class="countdown text-center item active">
 	  	  		
-	  	  			<img src="./images/bodhi.png" alt="bodhi">
 				    <div class="time-circle">
 				      <div class="progress"></div>
 				      <span class="time hours"></span>
