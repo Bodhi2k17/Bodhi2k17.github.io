@@ -3,8 +3,8 @@
 <head>
 	<title>BODHI 2k17</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./css/animate.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!--
+	<link rel="stylesheet" href="./css/animate.css"> -->
     <link rel="stylesheet" href="./css/flipclock.css">
 	<script src="./js/jquery.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
@@ -230,6 +230,32 @@
 			src: url("fonts/clb.ttf") format("truetype");
 	}
 
+	@keyframes rubberBand {
+  		0% {transform: scale(1);}
+  		30% {transform: scaleX(1.25) scaleY(0.75);}
+  		40% {transform: scaleX(0.75) scaleY(1.25);}
+  		60% {transform: scaleX(1.15) scaleY(0.85);}
+  		100% {transform: scale(1);}
+	}
+	.rubberBand {
+  		animation-name: rubberBand;
+	}
+
+	@keyframes bounce {
+  		0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  		40% {transform: translateY(-30px);}
+  		60% {transform: translateY(-15px);}
+	}
+	.bounce {
+  		animation-name: bounce;
+	}
+
+	.animated {
+  		animation-duration: 1.5s;
+  		animation-fill-mode: backwards;
+  		animation-iteration-count: infinite;
+	}
+
 	.montserrat {
     font-family: "Montserrat" !important;
 	}
@@ -449,7 +475,7 @@
             	</div>
 
 	    	  	<div class="col-md-6 item active"><br><br>
-	      			<img src="./images/bodhi.png" alt="bodhi"s>
+	      			<img src="./images/bodhi.png" alt="bodhi">
 	    		</div><br><br><br>
 
 	    	</div>
@@ -459,7 +485,7 @@
 
 	<div id="About" class='container-fluid vjc-description  about-page'>
 			<br>
-            <h2 class='text-center'>About VJCET</h2>
+            <h2 class='text-center'>ABOUT VJCET</h2>
             <br>
             <br>
             <div class='col-md-6 text-center center-block'>
@@ -469,7 +495,7 @@
     </div>
     <div id="Bodhi" class='container-fluid vjc-description  about-page'>
 			<br>
-            <h2 class='text-center'>About BODHI</h2>
+            <h2 class='text-center'>ABOUT BODHI</h2>
             <br>
             <br>
             <p class='col-md-6 montserrat'>Bodhi is blah blah blah and blah. "Service of GOD through service of Humanity" is the driving motto of the Kothamangalam Diocese. Viswajyothi College of Engineering &amp; Technology is yet another hallmark of the commitment and experience of the Kothamangalam Diocese in the field of education. Our Vision Moulding Engineers par Excellence with Integrity Fairness and Human Values aims to mould Engineers for tomorrow for the welfare of mankind and Society. Viswajyothi College of Engineering and Technology is the one of the first Self Financing Engineering college in the state which started working in June 2001. The developing infrastructure of the college is truly bound to make the campus, internationally competent in the coming years. Apart from academic achievements the College has also put up sincere efforts to develop Entrepreneurship environment among our students. The college is situated at a distance of 6km from Muvattupuzha Bus Stations at Vazhakulam, The Pineapple city of Asia, in Muvattupuzha – Thodupuzha State Highway.</p>
@@ -1298,6 +1324,8 @@
       		<p><span class="glyphicon glyphicon-map-marker"></span> Vazhakulam, Kerala</p>
     		<p><span class="glyphicon glyphicon-phone"></span> Jose Francis (+91 94954 2659)</p>
       		<p><span class="glyphicon glyphicon-envelope"></span> bodhiofficial@gmail.com</p>
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fbodhitechfest%2F&width=51&layout=box_count&action=like&size=small&show_faces=false&share=true&height=65&appId=764622547018455" width="51" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
     	</div>
 	</div>
 	<div id="map"></div>
@@ -1321,13 +1349,12 @@
     </script>
 
 	<footer class="container-fluid text-center">
-	<div id="bug" class="animated rubberBand infinite">
+	<div id="bug" class="animated bounce">
   		<a href="#page-top" title="Go to Top" class="container-fluid">
-    		<span class="glyphicon glyphicon-chevron-up animated rubberBand"></span>
+    		<span class="glyphicon glyphicon-chevron-up"></span>
   		</a>
   		</div>
-  		<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fbodhitechfest%2F&width=51&layout=box_count&action=like&size=small&show_faces=false&share=true&height=65&appId=764622547018455" width="51" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-	</footer>
+  			</footer>
 
 
 	<script src="bootstrap/jquery.bootstrap-autohidingnavbar.min.js"></script>
