@@ -84,8 +84,8 @@
 	  opacity: 0.2;
 	}
 	.countdown .time-circle .progress {
-	  width: 126px;
-	  height: 126px;
+	  width: 120px;
+	  height: 120px;
 	  position: absolute;
 	  left: -3px;
 	  top: -3px;
@@ -588,7 +588,12 @@
 	      			<img src="./images/bodhi.png" alt="bodhi">
 	    		</div>
 	  	  		<div class="countdown text-center item active">
-	  	  		
+	  	  			<div class="time-circle">
+				      <div class="progress"></div>
+				      <span class="time days"></span>
+				      <span class="time-name">days</span>
+				    </div>
+				    <span class="dots">:</span>
 				    <div class="time-circle">
 				      <div class="progress"></div>
 				      <span class="time hours"></span>
@@ -1622,7 +1627,7 @@
 
   var Countdown = function(options) {
     $.extend(this, {
-      endDate: new Date(2017, 4, 26, 15, 02, 20, 0)
+      endDate: new Date(2017, 02, 17, 08, 00, 00, 0)
     }, options);
 
     this.cache();
@@ -1643,9 +1648,11 @@
         $secondsCircle = $('.seconds').closest('.time-circle').find('.progress'),
         $minutesCircle = $('.minutes').closest('.time-circle').find('.progress'),
         $hoursCircle = $('.hours').closest('.time-circle').find('.progress'),
+        $daysCircle = $('.days').closest('.time-circle').find('progress'),
         $seconds = $('.seconds'),
         $minutes = $('.minutes'),
-        $hours = $('.hours');
+        $hours = $('.hours')
+        $days = $('.days');
 
       function pad(number) {
         return (number < 10 ? '0' : '') + number
@@ -1674,10 +1681,12 @@
         $seconds.text(pad(getSeconds));
         $minutes.text(pad(getMinutes));
         $hours.text(pad(getHours));
+        $days.text(pad(getDays));
 
         setScale($secondsCircle, getSeconds);
         setScale($minutesCircle, getMinutes);
         setScale($hoursCircle, getHours);
+        setScale($daysCircle, getDays);
 
         if (timeInSec <= 0) {
           clearInterval(setInterv);
