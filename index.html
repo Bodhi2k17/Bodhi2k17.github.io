@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>BODHI 2k17</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--
-	<link rel="stylesheet" href="./css/animate.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--
+    <link rel="stylesheet" href="./css/animate.css"> -->
     <link rel="stylesheet" href="./css/flipclock.css">
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
@@ -14,181 +12,162 @@
     <link href="https://fonts.googleapis.com/css?family=Cookie|Great+Vibes|Luckiest+Guy|Rock+Salt|Kreon" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Acme|Noticia+Text" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cookie|Great+Vibes|Luckiest+Guy|Rock+Salt|Kreon" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Acme|Noticia+Text" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bitter|Carter+One|Merienda|Sansita" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Noticia+Text" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Bitter|Carter+One|Merienda|Sansita" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+
     <script>
-    $(function() {
+        $(function () {
         $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
-    });
+        });
     </script>
-    <script src="./js/flipclock.min.js"></script>
+     <script src="./js/flipclock.min.js"></script>
     <style>
     .inline-block {
-        display: -moz-inline-stack;
-        display: inline-block;
+      display: -moz-inline-stack;
+      display: inline-block;
     }
-    
     * {
-        outline: none;
+      outline: none;
     }
-    
     html {
-        height: 100%;
+      height: 100%;
     }
-    
     .countdown {
-        margin: 25px auto;
-        text-align: right;
-        color: #00E676;
-        padding: 20px;
-        margin-top: 0px;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 300;
+      margin: 25px auto;
+      text-align: right;
+      color: #00E676;
+      padding: 20px;
+      margin-top: 0px;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 300;
     }
-    
     .countdown .time-circle {
-        display: -moz-inline-stack;
-        display: inline-block;
-        -moz-border-radius: 50%;
-        -o-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-        font-size: 54px;
-        width: 100px;
-        height: 100px;
-        line-height: 100px;
-        text-align: center;
-        position: relative;
-        background: rgba(78, 189, 192, 0.15);
+      display: -moz-inline-stack;
+      display: inline-block;
+      -moz-border-radius: 50%;
+      -o-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      font-size: 54px;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      position: relative;
+      background: rgba(78, 189, 192, 0.15);
     }
-    
     .countdown .time-circle:hover {
-        background: #FFF176;
-        color: #000;
-        -webkit-transition: background 0.3s;
-        -moz-transition: background 0.3s;
-        -ms-transition: background 0.3s;
-        -o-transition: background 0.3s;
+      background: #FFF176;
+      color: #000;
+      -webkit-transition: background 0.3s;
+      -moz-transition: background 0.3s;
+      -ms-transition: background 0.3s;
+      -o-transition: background 0.3s;
     }
-    
     .countdown .time-circle .time {
-        display: -moz-inline-stack;
-        display: inline-block;
-        font-size: 54px;
+      display: -moz-inline-stack;
+      display: inline-block;
+      font-size: 54px;
     }
     
     .countdown .time-circle .time-name {
-        font-size: 16px;
-        font-family: 'Arial', sans-serif;
-        position: absolute;
-        bottom: 10px;
-        width: 100%;
-        left: 0;
-        line-height: 16px;
-        color: #69F0AE;
-        opacity: 0.2;
+      font-size: 16px;
+      font-family: 'Arial', sans-serif;
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      left: 0;
+      line-height: 16px;
+      color: #69F0AE;
+      opacity: 0.2;
     }
-    
     .countdown .time-circle .progress {
-        width: 120px;
-        height: 120px;
-        position: absolute;
-        left: -3px;
-        top: -3px;
-        z-index: -9;
-        background-color: #f6f6f6;
-        background-color: rgba(0, 0, 0, 0.1);
-        -moz-border-radius: 50%;
-        -o-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-        overflow: hidden;
+      width: 120px;
+      height: 120px;
+      position: absolute;
+      left: -3px;
+      top: -3px;
+      z-index: -9;
+      background-color: #f6f6f6;
+      background-color: rgba(0, 0, 0, 0.1);
+      -moz-border-radius: 50%;
+      -o-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      overflow: hidden;
     }
-    
     .countdown .time-circle .progress:after {
-        content: '';
-        width: 2px;
-        height: 5px;
-        background: #fff;
-        position: absolute;
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transform-origin: 0% 100%;
-        -moz-transform-origin: 0% 100%;
-        -ms-transform-origin: 0% 100%;
-        -o-transform-origin: 0% 100%;
-        transform-origin: 0% 100%;
+      content: '';
+      width: 2px;
+      height: 5px;
+      background: #fff;
+      position: absolute;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 0% 100%;
+      -moz-transform-origin: 0% 100%;
+      -ms-transform-origin: 0% 100%;
+      -o-transform-origin: 0% 100%;
+      transform-origin: 0% 100%;
     }
-    
     .countdown .dots {
-        display: -moz-inline-stack;
-        display: inline-block;
-        padding: 20px 5px;
-        font-size: 54px;
-        -webkit-animation: dots 1s infinite;
-        -moz-animation: dots 1s infinite;
-        -ms-animation: dots 1s infinite;
+      display: -moz-inline-stack;
+      display: inline-block;
+      padding: 20px 5px;
+      font-size: 54px;
+      -webkit-animation: dots 1s infinite;
+      -moz-animation: dots 1s infinite;
+      -ms-animation: dots 1s infinite;
     }
-    
     @-moz-keyframes dots {
-        0% {
-            opacity: 1;
-        }
-        50% {
-            opacity: 0.5;
-        }
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
     }
-    
     @-webkit-keyframes dots {
-        0% {
-            opacity: 1;
-        }
-        50% {
-            opacity: 0.5;
-        }
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
     }
-    
     @keyframes dots {
-        0% {
-            opacity: 1;
-        }
-        50% {
-            opacity: 0.5;
-        }
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
     }
-    
     a:link {
         color: #f4511e !important;
     }
-    
     a:visited {
         color: #f45110;
     }
-    
     a:hover {
         color: #f45120;
     }
-    
     a:active {
         color: #f45130;
     }
-    
     body {
         font: 400 15px Lato, sans-serif;
         line-height: 1.8;
         color: #818181;
     }
-    
-    h1 {
+    h1{
         font-size: 27px;
         font-family: "Kingsmen";
         color: #f4511e;
     }
-    
     h2 {
         font-size: 40px;
         color: #303030;
@@ -196,15 +175,12 @@
         margin-bottom: 30px;
         font-family: "CLB";
     }
-    
-    #portfolio div {
-        padding: 5px;
+    #portfolio div{
+        padding:5px;
     }
-    
-    #portfolio div img {
+    #portfolio div img{
         margin: auto;
     }
-    
     h4 {
         font-size: 19px;
         line-height: 1.375em;
@@ -212,26 +188,22 @@
         font-weight: 400;
         margin-bottom: 30px;
     }
-    
     .carousel-inner > .item > img,
     .carousel-inner > .item > a > img {
-        margin: 0 auto;
-        height: 400px;
-        width: auto;
+       margin: 0 auto;
+       height:400px;
+       width: auto;
     }
-    
     .affix {
         top: 0;
         width: 100%;
         -webkit-transition: all .5s ease-in-out;
         transition: all .5s ease-in-out;
     }
-    
     .affix-top {
         position: static;
         top: -35px;
     }
-    
     .affix + .container-fluid {
         padding-top: 70px;
     }
@@ -243,15 +215,13 @@
         padding: 100px 25px;
         font-family: 'Kreon', serif;
         max-height: 100%;
-    }
-    
+        }
     .glyphicon {
         font-size: 20px;
         margin-bottom: 20px;
         color: #f4511e;
         src: url("./fonts/glyphicons-halflings-regular.ttf") format("truetype");
     }
-    
     .navbar {
         margin-bottom: 0;
         background-color: #000000;
@@ -263,106 +233,85 @@
         border-radius: 0;
         font-family: 'Acme', sans-serif;
     }
-    
-    .navbar li a,
-    .navbar .navbar-brand {
+    .navbar li a, .navbar .navbar-brand {
         color: #fff !important;
     }
-    
     .navbar .in .nav li {
         display: block;
         float: none;
-        width: 100%;
+        width:100%;
     }
-    
-    .navbar-nav li a:hover,
-    .navbar-nav li.active a {
+    .navbar-nav li a:hover, .navbar-nav li.active a {
         color: #000000 !important;
         background-color: #fff !important;
     }
-    
     .navbar-custom .navbar-brand:hover,
     .navbar-custom .navbar-brand:focus,
     .navbar-custom .navbar-brand:active,
     .navbar-custom .navbar-brand.active {
         color: white;
     }
-    
     .navbar-custom .navbar-nav {
         letter-spacing: 1px;
     }
-    
     .navbar-custom .navbar-nav li a {
         color: white;
     }
-    
     .navbar-custom .navbar-nav li a:hover {
         color: #FFFFFF;
         outline: none;
     }
-    
     .navbar-custom .navbar-nav li a:focus,
     .navbar-custom .navbar-nav li a:active {
         color: white;
     }
-    
     .navbar-custom .navbar-nav li.active a {
         color: white;
         background: #FFFFFF;
     }
-    
     .navbar-custom .navbar-nav li.active a:hover,
     .navbar-custom .navbar-nav li.active a:focus,
     .navbar-custom .navbar-nav li.active a:active {
         color: white;
         background: #FFFFFF;
     }
-    
     .navbar-custom .navbar-toggle {
         color: white;
         text-transform: uppercase;
         font-size: 10px;
         border-color: white;
     }
-    
     .navbar-custom .navbar-toggle:hover,
     .navbar-custom .navbar-toggle:focus {
         background-color: #FFFFFF;
         color: white;
         border-color: #FFFFFF;
     }
-    
-    .container-fluid {
+    .container-fluid{
         color: #000000 !important;
     }
-    
     .bg-grey {
-        background-color: #f6f6f6;
+      background-color: #f6f6f6;
     }
-    
-    .footer-font {
+    .footer-font{
         font-family: 'Cookie', cursive;
         color: #000080 !important;
     }
-    
-    .footer {
+    .footer{
         font-family: 'Great Vibes', cursive;
         color: #000080 !important;
-        font-size: 18px background-color: #000;
+        font-size: 18px
+        background-color: #000;
         -webkit-animation-iteration-count: infinite;
         -webkit-animation-duration: 10s;
     }
-    
-    .new-style-bodhi {
+    .new-style-bodhi{
         font-family: 'Rock Salt', cursive;
-        color: #000000 !important text-shadow: 10px 15px #ff0000;
+        color: #000000 !important
+        text-shadow: 10px 15px #ff0000;
         text-align: left;
     }
-    
-    .slideanim {
-        visibility: hidden;
-    }
-    
+    .slideanim {visibility:hidden;}
     .slide {
         animation-name: slide;
         -webkit-animation-name: slide;
@@ -370,85 +319,61 @@
         -webkit-animation-duration: 1s;
         visibility: visible;
     }
-    
     .section-heading {
-        margin-top: 0;
+    margin-top: 0;
     }
-    
     .service-box {
         margin: 50px auto 0;
         max-width: 400px;
     }
-    
     @media(min-width:992px) {
         .service-box {
             margin: 20px auto 0;
         }
     }
-    
     @font-face {
-        font-family: Montserrat;
-        src: url("fonts/Montserrat-ExtraLight.otf") format("opentype");
+    font-family: Montserrat;
+    src: url("fonts/Montserrat-ExtraLight.otf") format("opentype");
     }
-    
     @font-face {
-        font-family: Kingsmen;
-        src: url("fonts/Kingsmen.otf") format("opentype");
+    font-family: Kingsmen;
+    src: url("fonts/Kingsmen.otf") format("opentype");
     }
-    
     @font-face {
-        font-family: CLB;
-        src: url("fonts/clb.ttf") format("truetype");
+            font-family: CLB;
+            src: url("fonts/clb.ttf") format("truetype");
     }
-    
     @keyframes rubberBand {
-        0% {
-            transform: scale(1);
-        }
-        30% {
-            transform: scaleX(1.25) scaleY(0.75);
-        }
-        40% {
-            transform: scaleX(0.75) scaleY(1.25);
-        }
-        60% {
-            transform: scaleX(1.15) scaleY(0.85);
-        }
-        100% {
-            transform: scale(1);
-        }
+        0% {transform: scale(1);}
+        30% {transform: scaleX(1.25) scaleY(0.75);}
+        40% {transform: scaleX(0.75) scaleY(1.25);}
+        60% {transform: scaleX(1.15) scaleY(0.85);}
+        100% {transform: scale(1);}
     }
-    
     .rubberBand {
         animation-name: rubberBand;
     }
-    
     .animated {
         animation-duration: 1.5s;
         animation-fill-mode: both;
         animation-iteration-count: infinite;
     }
-    
     .animatedNavBar {
         animation-duration: 1.5s;
         animation-fill-mode: both;
     }
-    
     .montserrat {
-        font-family: "Montserrat" !important;
+    font-family: "Montserrat" !important;
     }
-    
     .service-box p {
         margin-bottom: 0;
     }
-    
     .portfolio-box {
         display: block;
         position: relative;
         margin: 0 auto;
         max-width: 650px;
     }
-    
     .portfolio-box .portfolio-box-caption {
         display: block;
         position: absolute;
@@ -456,14 +381,13 @@
         width: 100%;
         height: 100%;
         text-align: center;
-        color: #fff;
+        color: #000;
         opacity: 0;
-        background: rgba(240, 95, 64, .9);
+        background: rgba(240,95,64,.9);
         -webkit-transition: all .35s;
         -moz-transition: all .35s;
         transition: all .35s;
     }
-    
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
         position: absolute;
         top: 50%;
@@ -471,70 +395,57 @@
         text-align: center;
         transform: translateY(-50%);
     }
-    
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
         padding: 0 15px;
         font-family: 'Sansita', sans-serif;
     }
-    
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-        opacity: .6;
-    }
-    
+        opacity: 1;
+        }
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
         text-transform: uppercase;
         font-size: 14px;
         font-weight: 600;
     }
-    
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
         font-size: 18px;
     }
-    
     .portfolio-box:hover .portfolio-box-caption {
-        opacity: 1;
+        opacity: 0.5;
     }
-    
     .modal {
         text-align: center;
         padding: 0!important;
     }
-    
     .modal-content {
         text-align: left;
         vertical-align: middle;
     }
-    
-    #bug {
+    #bug{
         height: 100px;
         width: 100px;
         margin: 0 auto;
     }
-    
     #map {
         height: 400px;
         width: 100%;
     }
-    
-    #fb {
+    #fb{
         align-content: center;
     }
-    
     #BrandIMG {
         width: 85px;
         border-radius: 100%;
         box-shadow: 1px 1px 20px 1px #412A46;
     }
-    
     .vjc-description p {
         font-size: 100%;
         text-align: justify;
         /*font-family: 'Merienda', cursive;*/
         font-family: 'Noticia Text', serif;
-        text-align: center;
+        text-align: justify;
     }
-    
     @keyframes slide {
         0% {
             opacity: 0;
@@ -545,7 +456,6 @@
             transform: translateY(0%);
         }
     }
-    
     @-webkit-keyframes slide {
         0% {
             opacity: 0;
@@ -556,7 +466,6 @@
             -webkit-transform: translateY(0%);
         }
     }
-    
     @media screen and (max-width: 768px) {
         .col-sm-4 {
             text-align: center;
@@ -567,72 +476,61 @@
             margin-bottom: 35px;
         }
     }
-    
     @media screen and (max-width: 480px) {
         .logo {
             font-size: 150px;
         }
     }
-    
     body {
         position: relative;
     }
-    
     #About {
-        padding-top: 50px;
+        padding-top:50px;
         color: #f4511e;
     }
-    
     #Events {
-        padding-top: 50px;
+        padding-top:50px;
         color: #f4511e;
     }
-    
     #Contact {
-        padding-top: 50px;
+        padding-top:50px;
         color: #f4511e;
     }
-    
-    #sound {
-        position: fixed;
-        right: 5px;
-        top: 5px;
-        background: transparent;
+    #sound
+    {
+        position:fixed;
+        right:5px;
+        top:5px;
+        background:transparent;
         padding: 10px;
         font-size: 20px;
         color: #f4511e;
         cursor: pointer;
-        trasition: .5s ease;
+        trasition:.5s ease;
     }
-    
-    #sound:hover {
+    #sound:hover
+    {
         background: #2C261A;
     }
-    
     .img-center {
-        margin: 0 auto;
+        margin:0 auto;
     }
-    
-    .modal-body {
-        margin-top: 50px;
+    .modal-body{
+        margin-top:50px;
     }
-    
-    .modal-body * {
+    .modal-body *{
         max-width: 100%;
     }
-    
     ::-webkit-scrollbar {
-        width: 0px;
-        /* remove scrollbar space */
-        background: transparent;
-        /* optional: just make scrollbar invisible */
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
     }
-   
     </style>
+
     <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png" />
 </head>
 
-<body id="page-top" class="index" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="page-top" class="index" data-spy="scroll" data-target=".navbar" data-offset="50" >
     <nav class="navbar navbar-default navbar-fixed-top ">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -652,6 +550,7 @@
             </div>
         </div>
     </nav>
+
     <div class="jumbotron text-center">
         <div id="Home" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
@@ -661,61 +560,63 @@
                 <div class="item active">
                     <img src="./images/bodhi.png" alt="bodhi">
                 </div>
-                <div class="countdown text-center item active">
+                <div class="countdown text-center item active hidden-xs">
                     <div class="time-circle">
-                        <div class="progress"></div>
-                        <span class="time weeks"></span>
-                        <span class="time-name">weeks</span>
+                      <div class="progress"></div>
+                      <span class="time weeks"></span>
+                      <span class="time-name">weeks</span>
                     </div>
                     <span class="dots">:</span>
                     <div class="time-circle">
-                        <div class="progress"></div>
-                        <span class="time days"></span>
-                        <span class="time-name">days</span>
+                      <div class="progress"></div>
+                      <span class="time days"></span>
+                      <span class="time-name">days</span>
                     </div>
                     <span class="dots">:</span>
                     <div class="time-circle">
-                        <div class="progress"></div>
-                        <span class="time hours"></span>
-                        <span class="time-name">hrs</span>
+                      <div class="progress"></div>
+                      <span class="time hours"></span>
+                      <span class="time-name">hrs</span>
                     </div>
                     <span class="dots">:</span>
                     <div class="time-circle">
-                        <div class="progress"></div>
-                        <span class="time minutes"></span>
-                        <span class="time-name">min</span>
+                      <div class="progress"></div>
+                      <span class="time minutes"></span>
+                      <span class="time-name">min</span>
                     </div>
                     <span class="dots">:</span>
                     <div class="time-circle">
-                        <div class="progress"></div>
-                        <span class="time seconds"></span>
-                        <span class="time-name">sec</span>
+                      <div class="progress"></div>
+                      <span class="time seconds"></span>
+                      <span class="time-name">sec</span>
                     </div>
-                </div>
+                  </div>
             </div>
         </div>
     </div>
-    <div id="About" class="container-fluid vjc-description about-page">
-        <h2 class='text-center'>ABOUT VJCET</h2>
-        <div class='col-md-6 text-center center-block'>
-            <br>
-            <br><img class='img-responsive' src="./images/colg.jpg">
+
+        <div id="About" class="container-fluid vjc-description about-page">
+        
+            <h2 class='text-center'>ABOUT VJCET</h2>
+            
+            <div class='col-md-6 text-center center-block'>
+                <br><br><img class='img-responsive' src="./images/colg.jpg">
+            </div>
+            <p class='col-md-6 montserrat'>Viswajyothi is the lamp of God which brings light to the whole world. It aims to convey glow for the whole world and to bring all to radiance from darkness. "Service of GOD through service of Humanity" is the driving motto of the Kothamangalam Diocese. Viswajyothi College of Engineering &amp; Technology is yet another hallmark of the commitment and experience of the Kothamangalam Diocese in the field of education. Our Vision Moulding Engineers par Excellence with Integrity Fairness and Human Values aims to mould Engineers for tomorrow for the welfare of mankind and Society. Viswajyothi College of Engineering and Technology is the one of the first Self Financing Engineering college in the state which started working in June 2001. The developing infrastructure of the college is truly bound to make the campus, internationally competent in the coming years. Apart from academic achievements the College has also put up sincere efforts to develop Entrepreneurship environment among our students. The college is situated at a distance of 6km from Muvattupuzha Bus Stations at Vazhakulam, The Pineapple city of Asia, in Muvattupuzha – Thodupuzha State Highway.</p><br>
+            <h2 class='text-center'>ABOUT BODHI</h2>
+            <p class='col-md-6 montserrat'>Bodhi is blah blah blah and blah. "Service of GOD through service of Humanity" is the driving motto of the Kothamangalam Diocese. Viswajyothi College of Engineering &amp; Technology is yet another hallmark of the commitment and experience of the Kothamangalam Diocese in the field of education. Our Vision Moulding Engineers par Excellence with Integrity Fairness and Human Values aims to mould Engineers for tomorrow for the welfare of mankind and Society. Viswajyothi College of Engineering and Technology is the one of the first Self Financing Engineering college in the state which started working in June 2001. The developing infrastructure of the college is truly bound to make the campus, internationally competent in the coming years. Apart from academic achievements the College has also put up sincere efforts to develop Entrepreneurship environment among our students. The college is situated at a distance of 6km from Muvattupuzha Bus Stations at Vazhakulam, The Pineapple city of Asia, in Muvattupuzha – Thodupuzha State Highway.</p>
+            <div class='col-md-6 text-center img-center center-block'>
+                <br><br><img class='img-responsive' src="./images/BodhiOrange.png" height="779" width="550">
+            </div>
+
         </div>
-        <p class='col-md-6 montserrat'>Viswajyothi is the lamp of God which brings light to the whole world. It aims to convey glow for the whole world and to bring all to radiance from darkness. "Service of GOD through service of Humanity" is the driving motto of the Kothamangalam Diocese. Viswajyothi College of Engineering &amp; Technology is yet another hallmark of the commitment and experience of the Kothamangalam Diocese in the field of education. Our Vision Moulding Engineers par Excellence with Integrity Fairness and Human Values aims to mould Engineers for tomorrow for the welfare of mankind and Society. Viswajyothi College of Engineering and Technology is the one of the first Self Financing Engineering college in the state which started working in June 2001. The developing infrastructure of the college is truly bound to make the campus, internationally competent in the coming years. Apart from academic achievements the College has also put up sincere efforts to develop Entrepreneurship environment among our students. The college is situated at a distance of 6km from Muvattupuzha Bus Stations at Vazhakulam, The Pineapple city of Asia, in Muvattupuzha – Thodupuzha State Highway.</p>
-        <br>
-        <h2 class='text-center'>ABOUT BODHI</h2>
-        <p class='col-md-6 montserrat'>Bodhi is blah blah blah and blah. "Service of GOD through service of Humanity" is the driving motto of the Kothamangalam Diocese. Viswajyothi College of Engineering &amp; Technology is yet another hallmark of the commitment and experience of the Kothamangalam Diocese in the field of education. Our Vision Moulding Engineers par Excellence with Integrity Fairness and Human Values aims to mould Engineers for tomorrow for the welfare of mankind and Society. Viswajyothi College of Engineering and Technology is the one of the first Self Financing Engineering college in the state which started working in June 2001. The developing infrastructure of the college is truly bound to make the campus, internationally competent in the coming years. Apart from academic achievements the College has also put up sincere efforts to develop Entrepreneurship environment among our students. The college is situated at a distance of 6km from Muvattupuzha Bus Stations at Vazhakulam, The Pineapple city of Asia, in Muvattupuzha – Thodupuzha State Highway.</p>
-        <div class='col-md-6 text-center img-center center-block'>
-            <br>
-            <br><img class='img-responsive' src="./images/BodhiOrange.png" height="779" width="550">
-        </div>
-    </div>
+
     <div id="Events" class="container-fluid bg-3  text-center">
-        <div class="about-page">
-            <h2>EVENTS</h2>
-        </div>
-        <!--GENERAL EVENTS-->
-        <h1>HIGHLIGHTS</h1>
+            <div class="about-page">
+                <h2>EVENTS</h2>
+            </div>
+            <!--GENERAL EVENTS-->
+            <h1>HIGHLIGHTS</h1><
         <div class="container">
             <div class="col-sm-6">
                 <img src="./images/logoGif.gif" width=auto height="400">
@@ -765,120 +666,125 @@
         </div>
         <br>
         <br>
-        <h1>DEPARTMENT EVENTS</h1>
-        <br>
+        <h1>DEPARTMENT EVENTS</h1><br>
         <section class="no-padding" id="portfolio">
-            <div class="container-fluid">
-                <div class="row no-gutter">
-                    <div class="col-lg-4 col-sm-6">
-                        <a href="#portfolioModal1" data-toggle="modal" class="portfolio-link portfolio-box">
-                            <img src="./images/ce.png" class="img-responsive img-circle" alt="Civil Engineering" height="236" width="304" align="center">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Department of
-                                    </div>
-                                    <div class="project-name">
-                                        CIVIL ENGINEERING
-                                    </div>
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal1" data-toggle="modal" class="portfolio-link portfolio-box">
+                        <img src="./images/ce.png" class="img-responsive img-circle" alt="Civil Engineering"  height="236" width="304" align="center">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Department of
+                                </div>
+                                <div class="project-name">
+                                    CIVIL ENGINEERING
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a href="#portfolioModal2" data-toggle="modal" class="portfolio-link portfolio-box">
-                            <img src="./images/cs.png" class="img-responsive img-circle" alt="COMPUTER SCIENCE &AMP; ENGINEERING" height="236" width="304" align="center">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Department of
-                                    </div>
-                                    <div class="project-name">
-                                        COMPUTER SCIENCE &AMP; ENGINEERING
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a href="#portfolioModal3" data-toggle="modal" class="portfolio-link portfolio-box">
-                            <img src="./images/eee.png" class="img-responsive img-circle" alt="ELECTRICAL &AMP; ELECTRONICS ENGINEERING" height="236" width="304" align="center">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Department of
-                                    </div>
-                                    <div class="project-name">
-                                        ELECTRICAL &AMP; ELECTRONICS ENGINEERING
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a href="#portfolioModal4" data-toggle="modal" class="portfolio-link portfolio-box">
-                            <img src="./images/ec.jpg" class="img-responsive img-circle" alt="ELECTRONICS &AMP; COMMUNICATION ENGINEERING" height="236" width="304" align="center">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Department of
-                                    </div>
-                                    <div class="project-name">
-                                        ELECTRONICS &AMP; COMMUNICATION ENGINEERING
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a href="#portfolioModal5" data-toggle="modal" class="portfolio-link portfolio-box">
-                            <img src="./images/me.png" class="img-responsive img-circle" alt=" MECHANICAL ENGINEERING" height="236" width="304" align="center">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Department of
-                                    </div>
-                                    <div class="project-name">
-                                        MECHANICAL ENGINEERING
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a href="#portfolioModal6" data-toggle="modal" class="portfolio-link portfolio-box">
-                            <img src="./images/it.png" class="img-responsive img-circle" alt="INFORMATION TECHNOLOGY" height="236" width="304" align="center">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Department of
-                                    </div>
-                                    <div class="project-name">
-                                        INFORMATION TECHNOLOGY
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6"></div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a href="#portfolioModal7" data-toggle="modal" class="portfolio-link portfolio-box">
-                            <img src="./images/mba.jpg" class="img-responsive img-circle" alt="MBA" height="236" width="300" align="center">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                    </div>
-                                    <div class="project-name">
-                                        <strong>MBA</strong>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal2" data-toggle="modal" class="portfolio-link portfolio-box">
+                        <img src="./images/cs.png" class="img-responsive img-circle" alt="COMPUTER SCIENCE &AMP; ENGINEERING"  height="236" width="304" align="center">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Department of
+                                </div>
+                                <div class="project-name">
+                                    COMPUTER SCIENCE &AMP; ENGINEERING
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal3" data-toggle="modal" class="portfolio-link portfolio-box">
+                        <img src="./images/eee.png" class="img-responsive img-circle" alt="ELECTRICAL &AMP; ELECTRONICS ENGINEERING"  height="236" width="304" align="center">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Department of
+                                </div>
+                                <div class="project-name">
+                                    ELECTRICAL &AMP; ELECTRONICS ENGINEERING
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal4" data-toggle="modal" class="portfolio-link portfolio-box">
+                        <img src="./images/ec.jpg" class="img-responsive img-circle" alt="ELECTRONICS &AMP; COMMUNICATION ENGINEERING"  height="236" width="304" align="center">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Department of
+                                </div>
+                                <div class="project-name">
+                                    ELECTRONICS &AMP; COMMUNICATION ENGINEERING
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal5" data-toggle="modal" class="portfolio-link portfolio-box">
+                        <img src="./images/me.png" class="img-responsive img-circle" alt=" MECHANICAL ENGINEERING" height="236" width="304" align="center">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Department of
+                                </div>
+                                <div class="project-name">
+                                    MECHANICAL ENGINEERING
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal6" data-toggle="modal" class="portfolio-link portfolio-box">
+                        <img src="./images/it.png" class="img-responsive img-circle" alt="INFORMATION TECHNOLOGY"  height="236" width="304" align="center">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Department of
+                                </div>
+                                <div class="project-name">
+                                    INFORMATION TECHNOLOGY
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6"></div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#portfolioModal7" data-toggle="modal" class="portfolio-link portfolio-box">
+                        <img src="./images/mba.jpg" class="img-responsive img-circle" alt="MBA"  height="236" width="300" align="center">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+
+                                </div>
+                                <div class="project-name">
+                                    <strong>MBA</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
             </div>
-        </section>
+        </div>
+    </section>
     </div>
+
+    <!-- Civil -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -894,94 +800,126 @@
                             <h2>DEPARTMENT OF CIVIL ENGINEERING</h2>
                             <hr class="star-primary">
                             <img src="./images/ce.png" class="img-responsive img-centered" alt="CE ENGINEERING">
-                            <p>Staff In-Charge: Abhijith
-                                <br>Student Coordinator: Ajay Balan</p>
+                            <p><br> Staff In-Charge: Mr. Abhijith R.<br>Student Coordinator: Ajay Balan (S6 CE A) (9400257193)  Gifty George (S6 CE B) (9995622125)</p>
                             <div class="container">
                                 <div class="panel-group" id="accordion">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title">
-							          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">1. Town Planning</a>
-							        </h4>
-                                        </div>
-                                        <div id="collapse1" class="panel-collapse collapse">
-                                            <div class="panel-body">DESCRIPTION</div>
-                                            <div class="panel-footer">FOOTER</div>
-                                        </div>
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">1. Muvattupuzha 360°</a>
+                                    </h4>
+                                  </div>
+                                  <div id="collapse1" class="panel-collapse collapse">
+                                    <div class="panel-body"><strong>Venue:  Civil Engineering Laboratory Block</strong><br> Muvattupuzha –“The land where three rivers meet” is a beautiful town in Ernakulum district of Kerala. From the majestic heights of the Western Ghats this land undulates westward presenting a vista of silent valleys clothed in the richest green. Here we present before you a 3d model covering the entire town.</div>
+                                    <div class="panel-footer">Staff in charge: SHARON  JACOB  (9495794705)<br>Student Coordinators: SHEEN THOMSON  (S8 CE) (9496346435)<br>VARGHESE K L  (S8 CE) (9995696746)</div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">2. Earth Engine</a>
+                                    </h4>
+                                  </div>
+                                  <div id="collapse2" class="panel-collapse collapse">
+                                    <div class="panel-body">EXHIBITION<br><strong>Venue: Civil Engineering Laboratory Block</strong><br> Here the deep mysteriously hidden secrets of the Earth are brought out in a simple and fascinating way that will surely give you the experience of delving into the Earth and out.
+                                    </div>
+                                    <div class="panel-footer">Faculty in charge : ABHIJITH R -9496337587<br>Student Coordinator: JOHNS MATHEW (S6 CE B) (8086178286)<br>MARSHAL TOMY (S6 CE A) (8281975997)</div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">3. ALMETRIC (Paper Presentation)</a>
+                                    </h4>
+                                  </div>
+                                  <div id="collapse3" class="panel-collapse collapse">
+                                    <div class="panel-body"><br><strong>Venue : Civil Engineering Department Seminar Hall<br>Time: 9.30 AM, 17.02.2017</strong><br> The Civil Engineering Department Association invites you to present any civil engineering subject of your interest . Pick up a subject of your interest , come and present it and win your prizes. Area of topics includes:
+                                        <ul>
+                                            <li>Emerging trends in civil engineering</li>
+                                            <li>Transportation engineering</li>
+                                            <li>Geotechnical engineering</li>
+                                            <li>Advanced surveying</li>
+                                            <li>Structural design</li>
+                                            <li>Great civil engineering structures around the globe</li>
+                                            <li>Irrigation and water resources</li>
+                                            <li>Types of concrete</li>
+                                            <li>Advanced construction materials</li>
+                                            <li>Flexible pavements</li>
+                                            <li>Design of terrorist resistant structures</li>
+                                            <li>Geo synthetics </li>
+                                            <li>Tunnels and dams</li>
+                                            <li>And other civil engineering related topics.</li>
+                                        </ul>
+                                        Send your abstracts to civil.bodhi@gmail.com on or before 13th February 2017.<br>
+                                        INSTRUCTIONS:
+                                        <ol>
+                                            <li>The abstract should be of maximum of 100 words with 2-3 keywords.</li>
+                                            <li>The  email should include participants name and contact details.</li>
+                                            <li>Selected participants will be provided with paper ID for further references.</li>
+                                            <li>The full length paper should be in IEEE format and have a maximum of 10 papers.</li>
+                                            <li>Each presentation will be allotted 10 minutes (8 minutes presentation + 2 minutes discussion)</li>
+                                            <li>Each presentation should at most maximum of 15 slides</li>
+                                            <li>Participation certificates shall be provided.</li>
+                                            <li>The decision of the judging panel will be final.</li>
+                                        </ol> 
+                                        <strong>Registration fee – Rs 50 per person</strong>
+                                    </div>
+                                    <div class="panel-footer">First Prize : 3K<br>Second Prize : 3K<br>Faculty in charge : APPU JOHN<br>Student Coordinator: THERESA SAJNA SOJAN (S6 CE B) (8138965927)<br>HANNAH MINI (S6 CE A) (9496035859)</div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">4. WEIRD WONDERS (Online Photography)</a>
+                                    </h4>
+                                  </div>
+                                  <div id="collapse4" class="panel-collapse collapse">
+                                    <div class="panel-body">Amidst of great civil engineering creations, you may have seen some structures that left you baffled. So here we are giving you a chance to spot these ‘weird wonders’. Pick up your camera and give a click and send your photos to civil.bodhi@gmail.com on before 15th February 2017 along with your contact details.
+                                    Kindly note :
+                                        <ol>
+                                            <li>The photos should not be edited.</li>
+                                            <li>Reproducing pictures directly from internet will not be entertained.</li>
+                                            <li>The picture should have a caption. You can also add suitable tag line to it.</li>
+                                            <li>The pictures should be recently shot ones(within last 6 months).</li>
+                                            <li>The decision of the judging panel will final.</li>
+                                        </ol>
+                                    </div>
+                                    <div class="panel-footer">First Prize : 3k<br>Faculty in charge : DR. ANOOP C K<br>Student Coordinator: SANJU K JAMES (S6 CE B) (9447458545)<br>RAUNAC K PAULOSE (S6 CE B) (9446892619) </div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">5. Civil Expo</a>
+                                    </h4>
+                                  </div>
+                                    <div id="collapse5" class="panel-collapse collapse">
+                                        <div class="panel-body"><br><strong>Venue:  Civil Engineering Laboratory Block</strong><br> A wide range of working and still models of great structures is brought before you giving you a chance to explore and admire the skills of great civil engineers.</div>
+                                        <div class="panel-footer">Faculty in charge : RENJITH R., VISHNU KRISHNAN<br>Student Coordinator: ALBIN S VAYATTATIL (S6 CE B) (9446330649)<br>ALISHABAN NAZAR (S6 CE A) (9446885157)</div>
+                                    </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">2. Earth Engine</a>
-							        </h4>
-                                        </div>
-                                        <div id="collapse2" class="panel-collapse collapse">
-                                            <div class="panel-body">EXHIBITION</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : __
-                                                <br>Second Prize : __
-                                                <br>Faculty in charge : __________
-                                                <br>Student Coordinator: ________</div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title">
-							          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">3. Paper Presentation</a>
-							        </h4>
-                                        </div>
-                                        <div id="collapse3" class="panel-collapse collapse">
-                                            <div class="panel-body">DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : __
-                                                <br>Second Prize : __
-                                                <br>Faculty in charge : _______
-                                                <br>Student Coordinator: _____</div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title">
-							          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">4. Online Photography</a>
-							        </h4>
-                                        </div>
-                                        <div id="collapse4" class="panel-collapse collapse">
-                                            <div class="panel-body">DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : __
-                                                <br>Second Prize : __
-                                                <br>Faculty in charge : _______
-                                                <br>Student Coordinator: _____</div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title">
-							          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">5. Still Model</a>
-							        </h4>
-                                        </div>
-                                        <div id="collapse5" class="panel-collapse collapse">
-                                            <div class="panel-body">DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : __
-                                                <br>Second Prize : __
-                                                <br>Faculty in charge : _______
-                                                <br>Student Coordinator: _____</div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#accordion" href="#collapse6">6. Working Model</a>
-							        		</h4>
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">6. Club Workshop</a>
+                                            </h4>
                                         </div>
                                         <div id="collapse6" class="panel-collapse collapse">
-                                            <div class="panel-body">DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : __
-                                                <br>Second Prize : __
-                                                <br>Faculty in charge : _______
-                                                <br>Student Coordinator: _____</div>
+                                            <div class="panel-body"><br><strong>TWO DAY WORKSHOP ON ‘EARTHQUAKE ENGINEERING (Competition)</strong><br><strong>Venue : Civil Engineering Department Seminar Hall<br>Time: 12 NOON, 17.02.2017</strong><br>We the structural engineering club (SEC ∞) is offering you a platform to sharpen your skills in understanding the behavior of structures under earthquakes.  We offer 
+                                            <ul>
+                                                <li>A session on earthquake behavior of structures</li>
+                                                <li>Live modeling</li>
+                                            </ul>
+                                            <br>Rules
+                                            <ul>
+                                                <li>Participants shall be provided with popsicle and glue</li>
+                                                <li>Model will be tested against static and seismic loads</li>
+                                                <li>Prepare a presentation on case study of behavior of structures under past earthquake</li>
+                                                <li>Analysis of a multistory building using E Tabs</li>
+                                                <li>A maximum of four members can register as a team</li>
+                                            </ul>  
+                                            <strong>Registration fee :Rs 200/- for a team</strong></div>
+                                            <div class="panel-footer">First Prize : 3k<br>Faculty in charge : DANIEL A. V.<br>Student Coordinator: JINU JOHN (S6 CE B) (8547976765)<br>NIMYA GEORGE (S8 CE) (9539932775)</div>
                                         </div>
                                     </div>
                                 </div>
@@ -993,6 +931,8 @@
             </div>
         </div>
     </div>
+
+    <!-- CS -->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -1008,113 +948,86 @@
                             <h2>DEPARTMENT OF COMPUTER SCIENCE &AMP; ENGINEERING</h2>
                             <hr class="star-primary">
                             <img src="./images/cs.png" class="img-responsive img-centered" alt="CSE ENGINEERING" align="center">
-                            <p> Staff In-Charge: Dr. Anishin Raj M. M.
-                                <br>&#9;Mr. Andrews Jose
-                                <br>Augustine Johny (S8 CSE B) (9447066854)
-                                <br>&#9;Aju Jose (S8 CSE A) (9496651308)</p>
+                            <p> Staff In-Charge: Dr. Anishin Raj M. M.<br>&#9;Mr. Andrews Jose<br>Augustine Johny (S8 CSE B) (9447066854)<br>&#9;Aju Jose (S8 CSE A) (9496651308)</p>
                             <div class="container">
-                                <div class="panel-group" id="csaccordion">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title">
-							          		<a data-toggle="collapse" data-parent="#csaccordion" href="#ccsscollapse1">1. Technical Talk</a>
-							        	</h4>
-                                        </div>
-                                        <div id="ccsscollapse1" class="panel-collapse collapse">
-                                            <div class="panel-body">DESCRIPTION</div>
-                                            <div class="panel-footer">Staff In-Charge: Mrs. Cinita Mary Mathew
-                                                <br>Student Coordinators: Darchana Dinesh (9495992917)</div>
+                            <div class="panel-group" id="csaccordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#csaccordion" href="#ccsscollapse1">1. Technical Talk</a>
+                                        </h4>
+                                    </div>
+                                    <div id="ccsscollapse1" class="panel-collapse collapse">
+                                        <div class="panel-body">DESCRIPTION</div>
+                                            <div class="panel-footer">Staff In-Charge: Mrs. Cinita Mary Mathew<br>Student Coordinators: Darchana Dinesh (9495992917)</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse2">2. Paper Presentation</a>
-							        		</h4>
+                                                <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse2">2. Paper Presentation</a>
+                                            </h4>
                                         </div>
                                         <div id="cscollapse2" class="panel-collapse collapse">
-                                            <div class="panel-body">DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 3K
-                                                <br>Second Prize : 2K
-                                                <br>Faculty in charge : Mrs. Resmi Cherian
-                                                <br>Student Coordinator: Alwin D. George (8593041887)</div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title">
-							          <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse3">3. Gaming</a>
-							        </h4>
-                                        </div>
-                                        <div id="cscollapse3" class="panel-collapse collapse">
-                                            <div class="panel-body">DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 8K
-                                                <br>Second Prize : 5K
-                                                <br>Faculty in charge : Mr. Sivadas T. Nair
-                                                <br>Student Coordinator: Chris Aby Antony (8281888117)</div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title">
-							          <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse4">4. Techno Bazar</a>
-							        </h4>
-                                        </div>
-                                        <div id="cscollapse4" class="panel-collapse collapse">
-                                            <div class="panel-body">DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 6K
-                                                <br>Second Prize : 2K
-                                                <br>Faculty in charge : Mrs. Ritty Jacob
-                                                <br>Student Coordinator: Kiran Tomy (9846453167)</div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title">
-							          <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse5">5. TWERQY</a>
-							        </h4>
-                                        </div>
-                                        <div id="cscollapse5" class="panel-collapse collapse">
-                                            <div class="panel-body">Test your typing Skills</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 3K
-                                                <br>Second Prize : 2K
-                                                <br>Faculty in charge : Mrs. Nimmy
-                                                <br>Student Coordinator: Nithin Vincent</div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title">
-							          <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse6">6. C-SWAP</a>
-							        </h4>
-                                        </div>
-                                        <div id="cscollapse6" class="panel-collapse collapse">
-                                            <div class="panel-body">Synchronized Coders</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 6K
-                                                <br>Second Prize : 2K
-                                                <br>Faculty in charge : Mrs. Sreeja S. Pillai
-                                                <br>Student Coordinator: Sebin Sunny (8086215493)</div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title">
-							          <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse7">7. Gadget Show</a>
-							        </h4>
-                                        </div>
-                                        <div id="cscollapse7" class="panel-collapse collapse">
-                                            <div class="panel-body">DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>Faculty in charge : Mr. Jobin Jose
-                                                <br>Student Coordinator: Ajay Geo Jose</div>
-                                        </div>
-                                    </div>
+                                        <div class="panel-body">DESCRIPTION</div>
+                                    <div class="panel-footer"><br>First Prize : 3K<br>Second Prize : 2K<br>Faculty in charge : Mrs. Resmi Cherian<br>Student Coordinator: Alwin D. George (8593041887)</div>
+                                  </div>
                                 </div>
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse3">3. Gaming</a>
+                                    </h4>
+                                  </div>
+                                  <div id="cscollapse3" class="panel-collapse collapse">
+                                    <div class="panel-body">DESCRIPTION</div>
+                                    <div class="panel-footer"><br>First Prize : 8K<br>Second Prize : 5K<br>Faculty in charge : Mr. Sivadas T. Nair<br>Student Coordinator: Chris Aby Antony (8281888117)</div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse4">4. Techno Bazar</a>
+                                    </h4>
+                                  </div>
+                                  <div id="cscollapse4" class="panel-collapse collapse">
+                                    <div class="panel-body">DESCRIPTION</div>
+                                    <div class="panel-footer"><br>First Prize : 6K<br>Second Prize : 2K<br>Faculty in charge : Mrs. Ritty Jacob<br>Student Coordinator: Kiran Tomy (9846453167)</div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse5">5. TWERQY</a>
+                                    </h4>
+                                  </div>
+                                  <div id="cscollapse5" class="panel-collapse collapse">
+                                    <div class="panel-body">Test your typing Skills</div>
+                                    <div class="panel-footer"><br>First Prize : 3K<br>Second Prize : 2K<br>Faculty in charge : Mrs. Nimmy<br>Student Coordinator: Nithin Vincent</div>
+                                  </div>
+                                </div><div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse6">6. C-SWAP</a>
+                                    </h4>
+                                  </div>
+                                  <div id="cscollapse6" class="panel-collapse collapse">
+                                    <div class="panel-body">Synchronized Coders</div>
+                                    <div class="panel-footer"><br>First Prize : 6K<br>Second Prize : 2K<br>Faculty in charge : Mrs. Sreeja S. Pillai<br>Student Coordinator: Sebin Sunny (8086215493)</div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse7">7. Gadget Show</a>
+                                    </h4>
+                                  </div>
+                                  <div id="cscollapse7" class="panel-collapse collapse">
+                                    <div class="panel-body">DESCRIPTION</div>
+                                    <div class="panel-footer"><br>Faculty in charge : Mr. Jobin Jose<br>Student Coordinator: Ajay Geo Jose</div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -1123,6 +1036,8 @@
             </div>
         </div>
     </div>
+
+    <!-- EEE -->
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -1138,75 +1053,54 @@
                             <h2>DEPARTMENT OF ELECTRICAL &AMP; ELECTRONICS ENGINEERING</h2>
                             <hr class="star-primary">
                             <img src="./images/eee.png" class="img-responsive img-centered" alt="EEE ENGINEERING" align="center" style="margin: auto;">
-                            <p>Faculty in charge: Jomu M George
-                                <br>Convener: Saudh K Ali (8089885564)</p>
+                            <p>Faculty in charge: Jomu M George<br>Convener: Saudh K Ali (8089885564)</p>
                             <div class="container">
                                 <div class="panel-group" id="eeeaccordion">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title">
-							          		<a data-toggle="collapse" data-parent="#eeeaccordion" href="#eeesscollapse1">1. Technical Quiz</a>
-							        	</h4>
-                                        </div>
-                                        <div id="eeesscollapse1" class="panel-collapse collapse in">
-                                            <div class="panel-body">
-                                                <br>DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 8K
-                                                <br>Second Prize : 4K
-                                                <br>Faculty in charge : Ms.Neena Skaria, Ms.Merin Sunny
-                                                <br>Student Coordinator: Abin Jose (9544313983)</div>
-                                        </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#eeeaccordion" href="#eeesscollapse1">1. Technical Quiz</a>
+                                        </h4>
                                     </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title">
-							          		<a data-toggle="collapse" data-parent="#eeeaccordion" href="#eeecollapse2">2. Paper Presentation</a>
-							        	</h4>
-                                        </div>
-                                        <div id="eeecollapse2" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                <br>DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 4K
-                                                <br>Second Prize : 2K
-                                                <br>Faculty in charge : Mrs. Steffy Tressa Loui, Ms. Seena Paul
-                                                <br>Student Coordinator: Amal Jayadeesh (9048879983)</div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title">
-							          		<a data-toggle="collapse" data-parent="#eeeaccordion" href="#eeecollapse3">3. Robo Soccer</a>
-							        	</h4>
-                                        </div>
-                                        <div id="eeecollapse3" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                <br>DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 4K
-                                                <br>Second Prize : 2K
-                                                <br>Faculty in charge : Mrs. Steffy Tressa Loui, Ms. Seena Paul
-                                                <br>Student Coordinator: Amal Jayadeesh (9048879983)</div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title">
-							          		<a data-toggle="collapse" data-parent="#eeeaccordion" href="#eeecollapse4">4. Best Electrical Engineer</a>
-							        	</h4>
-                                        </div>
-                                        <div id="eeecollapse4" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                <br>DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 4K
-                                                <br>Second Prize : 2K
-                                                <br>Faculty in charge : Mr.Jose Jacob, Mr.Aryasree G
-                                                <br>Student Coordinator: Febin Paul (9072723917)</div>
-                                        </div>
+                                    <div id="eeesscollapse1" class="panel-collapse collapse in">
+                                        <div class="panel-body"><br>DESCRIPTION</div>
+                                        <div class="panel-footer"><br>First Prize : 8K<br>Second Prize : 4K<br>Faculty in charge : Ms.Neena Skaria, Ms.Merin Sunny<br>Student Coordinator: Abin Jose (9544313983)</div>
                                     </div>
                                 </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#eeeaccordion" href="#eeecollapse2">2. Paper Presentation</a>
+                                        </h4>
+                                    </div>
+                                    <div id="eeecollapse2" class="panel-collapse collapse">
+                                        <div class="panel-body"><br>DESCRIPTION</div>
+                                        <div class="panel-footer"><br>First Prize : 4K<br>Second Prize : 2K<br>Faculty in charge : Mrs. Steffy Tressa Loui, Ms. Seena Paul<br>Student Coordinator: Amal Jayadeesh (9048879983)</div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#eeeaccordion" href="#eeecollapse3">3. Robo Soccer</a>
+                                        </h4>
+                                    </div>
+                                    <div id="eeecollapse3" class="panel-collapse collapse">
+                                        <div class="panel-body"><br>DESCRIPTION</div>
+                                        <div class="panel-footer"><br>First Prize : 4K<br>Second Prize : 2K<br>Faculty in charge : Mrs. Steffy Tressa Loui, Ms. Seena Paul<br>Student Coordinator: Amal Jayadeesh (9048879983)</div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#eeeaccordion" href="#eeecollapse4">4. Best Electrical Engineer</a>
+                                        </h4>
+                                    </div>
+                                    <div id="eeecollapse4" class="panel-collapse collapse">
+                                        <div class="panel-body"><br>DESCRIPTION</div>
+                                        <div class="panel-footer"><br>First Prize : 4K<br>Second Prize : 2K<br>Faculty in charge : Mr.Jose Jacob, Mr.Aryasree G<br>Student Coordinator: Febin Paul (9072723917)</div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -1215,6 +1109,8 @@
             </div>
         </div>
     </div>
+
+    <!-- EC -->
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -1229,135 +1125,97 @@
                         <div class="modal-body">
                             <h2>DEPARTMENT OF ELECTRONICS &AMP; COMMUNICATION ENGINEERING</h2>
                             <hr class="star-primary">
+
                             <img src="./images/ec.jpg" class="img-responsive img-centered" alt="ECE ENGINEERING" align="center" style="margin: auto;">
-                            <p>Staff In-Charge: Mrs.Anu C Kunjachan (9633360844)
-                                <br>Assistant Staff In-Charge: Mrs.Minu George (9605563309)
-                                <br>Student Coordinators: Romy Byju (9946495007) (S8 EC A)
-                                <br>Assistant Student Coordinators: Ann Mary Thomas (9496744406) (S6 EC A)</p>
+                            <p>Staff In-Charge: Mrs.Anu C Kunjachan  (9633360844)<br>Assistant Staff In-Charge: Mrs.Minu George (9605563309)<br>Student Coordinators: Romy Byju (9946495007) (S8 EC A)<br>Assistant Student Coordinators: Ann Mary Thomas (9496744406) (S6 EC A)</p>
                             <div class="container">
                                 <div class="panel-group" id="eceaccordion">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#eceaccordion" href="#ecesscollapse1">1. Spot Photography</a>
-							        		</h4>
+                                                <a data-toggle="collapse" data-parent="#eceaccordion" href="#ecesscollapse1">1. Spot Photography</a>
+                                            </h4>
                                         </div>
                                         <div id="ecesscollapse1" class="panel-collapse collapse">
-                                            <div class="panel-body"><strong>TIME: 9:30am - 3:00pm<br>VENUE: B-102</strong>
-                                                <br>DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 3K
-                                                <br>Faculty in charge : Mr.Krishnendu K (9496803292)
-                                                <br>Mr.Eldhose Paul (9744167116)
-                                                <br>Student Coordinator: Liz Maria James (9400036105) (S8 EC B)
-                                                <br>Anoop Godwin (9746665913) (S6 EC A)</div>
+                                            <div class="panel-body"><strong>TIME: 9:30am - 3:00pm<br>VENUE: B-102</strong><br>DESCRIPTION</div>
+                                            <div class="panel-footer"><br>First Prize : 3K<br>Faculty in charge : Mr.Krishnendu K (9496803292)<br>Mr.Eldhose Paul (9744167116)<br>Student Coordinator: Liz Maria James (9400036105) (S8 EC B)<br>Anoop Godwin (9746665913) (S6 EC A)</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-								       			<a data-toggle="collapse" data-parent="#eceaccordion" href="#ececollapse2">2. Photographic Exhibition</a>
-								       		</h4>
+                                                <a data-toggle="collapse" data-parent="#eceaccordion" href="#ececollapse2">2. Photographic Exhibition</a>
+                                            </h4>
                                         </div>
                                         <div id="ececollapse2" class="panel-collapse collapse">
-                                            <div class="panel-body"><strong>TIME: 10:00am - 4:00pm<br>VENUE: B-102</strong>
-                                                <br>DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 3K
-                                                <br>Faculty in charge : Mr.Krishnendu K (9496803292)
-                                                <br>Mr.Eldhose Paul (9744167116)
-                                                <br>Student Coordinator: Tony Jose (9495030514) (S8 ECB)
-                                                <br>Aleesha Mathew (9846157901) (S6 ECB)</div>
+                                            <div class="panel-body"><strong>TIME: 10:00am - 4:00pm<br>VENUE: B-102</strong><br>DESCRIPTION</div>
+                                            <div class="panel-footer"><br>First Prize : 3K<br>Faculty in charge : Mr.Krishnendu K (9496803292)<br>Mr.Eldhose Paul (9744167116)<br>Student Coordinator: Tony Jose (9495030514) (S8 ECB)<br>Aleesha Mathew (9846157901) (S6 ECB)</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#eceaccordion" href="#ececollapse3">3. Prashnothara(Technical Quiz)</a>
-							        		</h4>
+                                                <a data-toggle="collapse" data-parent="#eceaccordion" href="#ececollapse3">3. Prashnothara(Technical Quiz)</a>
+                                            </h4>
                                         </div>
                                         <div id="ececollapse3" class="panel-collapse collapse">
                                             <div class="panel-body"><strong>TIME<br>Prelims: 11am - 12pm<br>Finals: 1:30pm - 4:00pm<br>VENUE: PTC SEMINAR HALL</strong> DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 5K
-                                                <br>Faculty in charge : Merlin Thomas (9446741339)
-                                                <br>Student Coordinator: Rajeswary Velayudhan (9495556754) (S8 EC B)
-                                                <br>Varghese Benny (8086967146) (S6 EC B)</div>
+                                            <div class="panel-footer"><br>First Prize : 5K<br>Faculty in charge : Merlin Thomas (9446741339)<br>Student Coordinator: Rajeswary Velayudhan (9495556754) (S8 EC B)<br>Varghese Benny (8086967146) (S6 EC B)</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#eceaccordion" href="#ececollapse4">4. Prakalpa (Mini Project Exhibition)</a>
-							        		</h4>
+                                                <a data-toggle="collapse" data-parent="#eceaccordion" href="#ececollapse4">4. Prakalpa (Mini Project Exhibition)</a>
+                                            </h4>
                                         </div>
                                         <div id="ececollapse4" class="panel-collapse collapse">
                                             <div class="panel-body"><strong>TIME<br>11:00am - 4:00pm<br>VENUE: CIRCUITS LAB I &AMP; II</strong></div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 8K
-                                                <br>Faculty in charge : MR.R Anil Kumar (9447659454)
-                                                <br>Student Coordinator: Algin George (9847574865) (S6 EC B)
-                                                <br>Irene George (9048857640) (S6 EC B)</div>
+                                            <div class="panel-footer"><br>First Prize : 8K<br>Faculty in charge : MR.R Anil Kumar (9447659454)<br>Student Coordinator: Algin George (9847574865) (S6 EC B)<br>Irene George (9048857640) (S6 EC B)</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#eceaccordion" href="#ececollapse5">5. Hobby Circuit Exhibition (only for students of VJCET)</a>
-        									</h4>
+                                                <a data-toggle="collapse" data-parent="#eceaccordion" href="#ececollapse5">5. Hobby Circuit Exhibition (only for students of VJCET)</a>
+                                            </h4>
                                         </div>
                                         <div id="ececollapse5" class="panel-collapse collapse">
                                             <div class="panel-body"><strong>TIME<br>10:30am - 4:00pm<br>VENUE: IC LAB &AMP; B-203</strong></div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 3.5K
-                                                <br>Faculty in charge : Mr.R Anil Kumar (9447659454)
-                                                <br>Student Coordinator: Ashin Basil John (9544907374) (S8 EC A)
-                                                <br>Parvathi R (9495762611) (S6 EC A)</div>
+                                            <div class="panel-footer"><br>First Prize : 3.5K<br>Faculty in charge : Mr.R Anil Kumar (9447659454)<br>Student Coordinator: Ashin Basil John (9544907374) (S8 EC A)<br>Parvathi R (9495762611) (S6 EC A)</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#eceaccordion" href="#ececollapse6">6. Creative Arts Exhibition (only for students of VJCET)</a>
-        									</h4>
+                                                <a data-toggle="collapse" data-parent="#eceaccordion" href="#ececollapse6">6. Creative Arts Exhibition (only for students of VJCET)</a>
+                                            </h4>
                                         </div>
                                         <div id="ececollapse6" class="panel-collapse collapse">
                                             <div class="panel-body"><strong>TIME<br>10:30am - 4:00pm<br>VENUE: IC LAB &AMP; B-203</strong></div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 4.5K
-                                                <br>Faculty in charge : Mrs.Anitta Thomas (9496825096)
-                                                <br>Student Coordinator: Algin George (9847574865) (S6 EC B)
-                                                <br>Irene George (9048857640) (S6 EC B)</div>
+                                            <div class="panel-footer"><br>First Prize : 4.5K<br>Faculty in charge : Mrs.Anitta Thomas (9496825096)<br>Student Coordinator: Algin George (9847574865) (S6 EC B)<br>Irene George (9048857640) (S6 EC B)</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#eceaccordion" href="#ececollapse7">7. Mokshayathi (Circuit Debugging)</a>
-        									</h4>
+                                                <a data-toggle="collapse" data-parent="#eceaccordion" href="#ececollapse7">7. Mokshayathi (Circuit Debugging)</a>
+                                            </h4>
                                         </div>
                                         <div id="ececollapse7" class="panel-collapse collapse">
                                             <div class="panel-body"><strong>TIME<br>Prelims: 12:00pm - 12:30pm<br>Finals: 01:30pm - 4:00pm<br>VENUE: CIRCUITS II LAB</strong></div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 5K
-                                                <br>Faculty in charge : Mr.Tony D (9497680830)
-                                                <br>Student Coordinator: Basil Jacob (8281929170) (S8 EC A)
-                                                <br>Deepa S (8943032335) (S6 EC A)</div>
+                                            <div class="panel-footer"><br>First Prize : 5K<br>Faculty in charge : Mr.Tony D (9497680830)<br>Student Coordinator: Basil Jacob (8281929170) (S8 EC A)<br>Deepa S (8943032335) (S6 EC A)</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#eceaccordion" href="#ececollapse8">8. Shastrapatra (Paper Presentation)</a>
-        									</h4>
+                                                <a data-toggle="collapse" data-parent="#eceaccordion" href="#ececollapse8">8. Shastrapatra (Paper Presentation)</a>
+                                            </h4>
                                         </div>
                                         <div id="ececollapse8" class="panel-collapse collapse">
                                             <div class="panel-body"><strong>TIME: 10:00am - 04:30pm<br>VENUE: M. TECH SEMINAR HALL</strong></div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 5K
-                                                <br>Faculty in charge : Mrs.Ranjini Surendran (9961516990)
-                                                <br>Student Coordinator: Didhin S (9447885441) (S8 EC A)
-                                                <br>Chippy Beena Simon (8138845443) (S6 EC B)</div>
+                                            <div class="panel-footer"><br>First Prize : 5K<br>Faculty in charge : Mrs.Ranjini Surendran (9961516990)<br>Student Coordinator: Didhin S (9447885441) (S8 EC A)<br>Chippy Beena Simon (8138845443) (S6 EC B)</div>
                                         </div>
                                     </div>
                                 </div>
@@ -1369,6 +1227,8 @@
             </div>
         </div>
     </div>
+
+    <!-- ME -->
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -1384,8 +1244,7 @@
                             <h2>DEPARTMENT OF MECHANICAL ENGINEERING</h2>
                             <hr class="star-primary">
                             <img src="./images/me.png" class="img-responsive img-centered" alt="ME ENGINEERING" align="center">
-                            <p>
-                                <br>Staff In-Charge: Frenosh k Francis, Ajo Issac John
+                            <p> <br>Staff In-Charge: Frenosh k Francis, Ajo Issac John
                                 <br>Student coordinators: Albin Johnson, Ebin Eldhose
                                 <br>Documentation Committee: Nibin B, Nithish
                                 <br>Discipline Committee: Vinoj k, Unnikrishnan T G
@@ -1397,103 +1256,67 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#meaccordion" href="#messcollapse1">1. MEXhaust (Auto show)</a>
-							        		</h4>
+                                                <a data-toggle="collapse" data-parent="#meaccordion" href="#messcollapse1">1. MEXhaust (Auto show)</a>
+                                            </h4>
                                         </div>
                                         <div id="messcollapse1" class="panel-collapse collapse">
                                             <div class="panel-body">An auto show, also known as a motor show or car show, is a public exhibition of current automobile models, debuts, concept cars, or out-of-production classics.</div>
-                                            <div class="panel-footer">
-                                                <br>Prize : 1L
-                                                <br>Faculty in charge : Eldhose Paul, Lovin Varghese, Abin Paul
-                                                <br>Student Coordinator: Gino sunny, Samuel Baby Mathew</div>
+                                            <div class="panel-footer"><br>Prize : 1L<br>Faculty in charge : Eldhose Paul, Lovin Varghese, Abin Paul<br>Student Coordinator: Gino sunny(8301043489), Samuel Baby Mathew(7034908038)</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-								       			<a data-toggle="collapse" data-parent="#meaccordion" href="#mecollapse2">2. Robotron</a>
-								       		</h4>
+                                                <a data-toggle="collapse" data-parent="#meaccordion" href="#mecollapse2">2. Robotron</a>
+                                            </h4>
                                         </div>
                                         <div id="mecollapse2" class="panel-collapse collapse">
-                                            <div class="panel-body">A team may consist of 3 to 5 member Participants. These participants can be from same or different institutes.
-                                                <br><strong>(1) Robo-race</strong>
-                                                <br>The maximum speed to beat another machines on the given track to reach the final destination in minimum time.
-                                                <br>Coordinator: Mishal musthafa, Jesbin Jose
-                                                <br><strong>(2) Line Tracer</strong>
-                                                <br>An autonomous robot that can follow a white lined path placed over a black background.
-                                                <br>Coordinator: Geo James, Nithin J Vattapara
-                                                <br><strong> (3)Robo war</strong>
-                                                <br>All the robots with wireless control should be able to change frequencies (if required) or coded channels to prevent any radio conflicts , it may be changed before the start of the match to avoid frequency interference with other teams.
-                                                <br>Rules:
-                                                <br>1) The Robot may be wired or wireless.
-                                                <br>2) IC engines, Inflammable, chemical, explosive weapons should not be used. Pneumatic devices are not allowed.
-                                                <br>3) For wired robot the wires should be slack at all times. The wires coming out of the robot should be stacked as a single unit and must be properly insulated.
-                                                <br>4) Batteries, if used, should not be damaged and leak-proof, else, it may lead to disqualification.
-                                                <br>5) All decisions made by the committee and judges will be final
-                                                <br>Coordinator: Bijo Peter, Rolvin Biju</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 25K
-                                                <br>Faculty in charge : Rakesh Jose, Varun
-                                                <br>Student Coordinator: Vignesh M, Martin Tom</div>
+                                            <div class="panel-body">A team may consist of 3 to 5 member Participants. These participants can be from same or different institutes.<br><strong>(1) Robo-race</strong><br>The maximum speed to beat another  machines on the given track to reach the final destination in minimum time.<br>Coordinator: Mishal musthafa, Jesbin Jose<br><strong>(2) Line Tracer</strong><br>An autonomous robot that can follow a white lined path placed over a black background.<br>Coordinator: Geo James, Nithin J Vattapara<br><strong> (3)Robo war</strong><br>All the robots with wireless control should be able to change frequencies (if required) or coded channels to prevent any radio conflicts , it may be changed before the start of the match to avoid frequency interference with other teams.<br>Rules:<br>1) The Robot may be wired or wireless.<br>2) IC engines, Inflammable, chemical, explosive weapons should not be used. Pneumatic devices are not   allowed.<br>3) For wired robot the wires should be slack at all times. The wires coming out of the robot should be   stacked as a single unit and must be properly insulated.<br>4) Batteries, if used, should not be damaged and leak-proof, else, it may lead to disqualification.<br>5) All decisions made by the committee and judges will be final<br>Coordinator: Bijo Peter, Rolvin Biju</div>
+                                            <div class="panel-footer"><br>First Prize : 25K<br>Faculty in charge : Rakesh Jose, Varun<br>Student Coordinator: Vignesh M, Martin Tom</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#meaccordion" href="#mecollapse3">3. Mech Zone</a>
-							        		</h4>
+                                                <a data-toggle="collapse" data-parent="#meaccordion" href="#mecollapse3">3. Mech Zone</a>
+                                            </h4>
                                         </div>
                                         <div id="mecollapse3" class="panel-collapse collapse">
-                                            <div class="panel-body">Exhibition and on spot events.
-                                                <br> (1) Mechathelon (Games)
-                                                <br>(2)Assembly War</div>
-                                            <div class="panel-footer">
-                                                <br>Faculty in charge : Arun K R, Arun Raphel
-                                                <br>Student Coordinator: Betsin Alosious, Amal k Sasi, Steffin Reji
-                                                <br>Art Works: Augustine Dani Jose, Aravind Raj</div>
+                                            <div class="panel-body">Exhibition and on spot events.<br> (1) Mechathelon (Games)<br>(2)Assembly War</div>
+                                            <div class="panel-footer"><br>Faculty in charge : Arun K R, Arun Raphel<br>Student Coordinator: Betsin Alosious, Amal k Sasi, Steffin Reji<br>Art Works: Augustine Dani Jose, Aravind Raj</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#meaccordion" href="#mecollapse4">4. Ultimate Engineer</a>
-							        		</h4>
+                                                <a data-toggle="collapse" data-parent="#meaccordion" href="#mecollapse4">4. Ultimate Engineer</a>
+                                            </h4>
                                         </div>
                                         <div id="mecollapse4" class="panel-collapse collapse">
                                             <div class="panel-body">Brush your skills,present your technical and unveil yourself via aptitude test,written rounds,task completion and an onstage event.acquire the diadem of BEST ENGINEER.</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 6K
-                                                <br>Faculty in charge :Eldhose Kurian, Sandeep
-                                                <br>Student Coordinator: Yeldho Peter, Jacob kuriachan</div>
+                                            <div class="panel-footer"><br>First Prize : 6K<br>Faculty in charge :Eldhose Kurian, Sandeep<br>Student Coordinator: Yeldho Peter, Jacob kuriachan</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#meaccordion" href="#mecollapse5">5. Sristi (Project Presentation)</a>
-        									</h4>
+                                                <a data-toggle="collapse" data-parent="#meaccordion" href="#mecollapse5">5. Sristi (Project Presentation)</a>
+                                            </h4>
                                         </div>
                                         <div id="mecollapse5" class="panel-collapse collapse">
                                             <div class="panel-body">Participants can present their project models and exhibit it. The best project will be awarded. The decisions made by the committee and judges will be final.</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 6K
-                                                <br>Faculty in charge : Tijo Jose, Aakash Paul Savio
-                                                <br>Student Coordinator: Josemon George, Rahul Jose</div>
+                                            <div class="panel-footer"><br>First Prize : 6K<br>Faculty in charge : Tijo Jose, Aakash Paul Savio<br>Student Coordinator: Josemon George, Rahul Jose</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#meaccordion" href="#mecollapse6">6. Prakalpa (Paper Presentation)</a>
-        									</h4>
+                                                <a data-toggle="collapse" data-parent="#meaccordion" href="#mecollapse6">6. Prakalpa (Paper Presentation)</a>
+                                            </h4>
                                         </div>
                                         <div id="mecollapse6" class="panel-collapse collapse">
                                             <div class="panel-body"><strong>TIME<br>10:30am - 4:00pm<br>VENUE: IC LAB &AMP; B-203</strong></div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 4.5K
-                                                <br>Faculty in charge : Mrs.Anitta Thomas (9496825096)
-                                                <br>Student Coordinator: Algin George (9847574865) (S6 EC B)
-                                                <br>Irene George (9048857640) (S6 EC B)</div>
+                                            <div class="panel-footer"><br>First Prize : 4.5K<br>Faculty in charge : Mrs.Anitta Thomas (9496825096)<br>Student Coordinator: Algin George (9847574865) (S6 EC B)<br>Irene George (9048857640) (S6 EC B)</div>
                                         </div>
                                     </div>
                                 </div>
@@ -1505,6 +1328,8 @@
             </div>
         </div>
     </div>
+
+    <!-- IT -->
     <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -1520,96 +1345,73 @@
                             <h2>DEPARTMENT OF INFORMATION TECHNOLOGY</h2>
                             <hr class="star-primary">
                             <img src="./images/it.png" class="img-responsive img-centered" alt="IT ENGINEERING" align="center" style="margin: auto;">
-                            <p>Staff In-charge: Diana Baby
-                                <br>Student Coordinator: Tomin (8281208703)</p>
+                            <p>Staff In-charge: Diana Baby<br>Student Coordinator: Tomin (8281208703)</p>
                             <div class="container">
                                 <div class="panel-group" id="itaccordion">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#itaccordion" href="#itsscollapse1">1. Paper Presentaion</a>
-							        		</h4>
+                                                <a data-toggle="collapse" data-parent="#itaccordion" href="#itsscollapse1">1. Paper Presentaion</a>
+                                            </h4>
                                         </div>
                                         <div id="itsscollapse1" class="panel-collapse collapse">
                                             <div class="panel-body">DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize: 3k
-                                                <br>Second Prize: 2k
-                                                <br>Faculty in charge : ____
-                                                <br>Student Coordinator: ____</div>
+                                            <div class="panel-footer"><br>First Prize: 3k<br>Second Prize: 2k<br>Faculty in charge : ____<br>Student Coordinator: ____</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-								       			<a data-toggle="collapse" data-parent="#itaccordion" href="#itcollapse2">2. Coding</a>
-								       		</h4>
+                                                <a data-toggle="collapse" data-parent="#itaccordion" href="#itcollapse2">2. Coding</a>
+                                            </h4>
                                         </div>
                                         <div id="itcollapse2" class="panel-collapse collapse">
                                             <div class="panel-body">DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize: 5K
-                                                <br>Second Prize: 3K
-                                                <br>Faculty in charge : ___
-                                                <br>Student Coordinator: ___</div>
+                                            <div class="panel-footer"><br>First Prize: 5K<br>Second Prize: 3K<br>Faculty in charge : ___<br>Student Coordinator: ___</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#itaccordion" href="#itcollapse3">3. System Assembly</a>
-							        		</h4>
+                                                <a data-toggle="collapse" data-parent="#itaccordion" href="#itcollapse3">3. System Assembly</a>
+                                            </h4>
                                         </div>
                                         <div id="itcollapse3" class="panel-collapse collapse">
                                             <div class="panel-body">DESCRIPTION</div>
-                                            <div class="panel-footer">First Prize: 5K
-                                                <br>Second Prize: 3k
-                                                <br>Faculty in charge : ____
-                                                <br>Student Coordinator: ___</div>
+                                            <div class="panel-footer">First Prize: 5K<br>Second Prize: 3k<br>Faculty in charge : ____<br>Student Coordinator: ___</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#itaccordion" href="#itcollapse4">4. Avatar World</a>
-							        		</h4>
+                                                <a data-toggle="collapse" data-parent="#itaccordion" href="#itcollapse4">4. Avatar World</a>
+                                            </h4>
                                         </div>
                                         <div id="itcollapse4" class="panel-collapse collapse">
-                                            <div class="panel-body">EXHIBITION
-                                                <br>DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>Faculty in charge : ____
-                                                <br>Student Coordinator: _____</div>
+                                            <div class="panel-body">EXHIBITION<br>DESCRIPTION</div>
+                                            <div class="panel-footer"><br>Faculty in charge : ____<br>Student Coordinator: _____</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#itaccordion" href="#itcollapse5">5. Web Crawler</a>
-        									</h4>
+                                                <a data-toggle="collapse" data-parent="#itaccordion" href="#itcollapse5">5. Web Crawler</a>
+                                            </h4>
                                         </div>
                                         <div id="itcollapse5" class="panel-collapse collapse">
                                             <div class="panel-body">DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 4K
-                                                <br>Second Prize: 2K
-                                                <br>Faculty in charge : ____
-                                                <br>Student Coordinator: ____</div>
+                                            <div class="panel-footer"><br>First Prize : 4K<br>Second Prize: 2K<br>Faculty in charge : ____<br>Student Coordinator: ____</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#itaccordion" href="#itcollapse6">6. Lan Gaming</a>
-        									</h4>
+                                                <a data-toggle="collapse" data-parent="#itaccordion" href="#itcollapse6">6. Lan Gaming</a>
+                                            </h4>
                                         </div>
                                         <div id="itcollapse6" class="panel-collapse collapse">
                                             <div class="panel-body">DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize : 5K
-                                                <br>Second Prize: 3K
-                                                <br>Faculty in charge : ____
-                                                <br>Student Coordinator: ____</div>
+                                            <div class="panel-footer"><br>First Prize : 5K<br>Second Prize: 3K<br>Faculty in charge : ____<br>Student Coordinator: ____</div>
                                         </div>
                                     </div>
                                 </div>
@@ -1621,6 +1423,8 @@
             </div>
         </div>
     </div>
+
+    <!-- MBA -->
     <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -1636,66 +1440,51 @@
                             <h2>MBA</h2>
                             <hr class="star-primary">
                             <img src="./images/mba.jpg" class="img-responsive img-centered" alt="MBA" align="center">
-                            <p>Staff In-charge: ____
-                                <br>Student Coordinator: ____</p>
+                            <p>Staff In-charge: ____<br>Student Coordinator: ____</p>
                             <div class="container">
                                 <div class="panel-group" id="mbaaccordion">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#mbaaccordion" href="#mbasscollapse1">1. Best Manager</a>
-							        		</h4>
+                                                <a data-toggle="collapse" data-parent="#mbaaccordion" href="#mbasscollapse1">1. Best Manager</a>
+                                            </h4>
                                         </div>
                                         <div id="mbasscollapse1" class="panel-collapse collapse">
                                             <div class="panel-body">DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize: 10k
-                                                <br>Second Prize: 5k
-                                                <br>Faculty in charge : ____
-                                                <br>Student Coordinator: ____</div>
+                                            <div class="panel-footer"><br>First Prize: 10k<br>Second Prize: 5k<br>Faculty in charge : ____<br>Student Coordinator: ____</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-								       			<a data-toggle="collapse" data-parent="#mbaaccordion" href="#mbacollapse2">2. Business Quiz</a>
-								       		</h4>
+                                                <a data-toggle="collapse" data-parent="#mbaaccordion" href="#mbacollapse2">2. Business Quiz</a>
+                                            </h4>
                                         </div>
                                         <div id="mbacollapse2" class="panel-collapse collapse">
                                             <div class="panel-body">DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>First Prize: 10K
-                                                <br>Second Prize: 5K
-                                                <br>Faculty in charge : ___
-                                                <br>Student Coordinator: ___</div>
+                                            <div class="panel-footer"><br>First Prize: 10K<br>Second Prize: 5K<br>Faculty in charge : ___<br>Student Coordinator: ___</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#mbaaccordion" href="#mbacollapse3">3. Treasure Hunt</a>
-							        		</h4>
+                                                <a data-toggle="collapse" data-parent="#mbaaccordion" href="#mbacollapse3">3. Treasure Hunt</a>
+                                            </h4>
                                         </div>
                                         <div id="mbacollapse3" class="panel-collapse collapse">
                                             <div class="panel-body">DESCRIPTION</div>
-                                            <div class="panel-footer">First Prize: 10K
-                                                <br>Second Prize: 5k
-                                                <br>Faculty in charge : ____
-                                                <br>Student Coordinator: ___</div>
+                                            <div class="panel-footer">First Prize: 10K<br>Second Prize: 5k<br>Faculty in charge : ____<br>Student Coordinator: ___</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-							          			<a data-toggle="collapse" data-parent="#mbaaccordion" href="#mbacollapse4">4. Paper Presentation</a>
-							        		</h4>
+                                                <a data-toggle="collapse" data-parent="#mbaaccordion" href="#mbacollapse4">4. Paper Presentation</a>
+                                            </h4>
                                         </div>
                                         <div id="mbacollapse4" class="panel-collapse collapse">
-                                            <div class="panel-body">EXHIBITION
-                                                <br>DESCRIPTION</div>
-                                            <div class="panel-footer">
-                                                <br>Faculty in charge : ____
-                                                <br>Student Coordinator: _____</div>
+                                            <div class="panel-body">EXHIBITION<br>DESCRIPTION</div>
+                                            <div class="panel-footer"><br>Faculty in charge : ____<br>Student Coordinator: _____</div>
                                         </div>
                                     </div>
                                 </div>
@@ -1707,248 +1496,224 @@
             </div>
         </div>
     </div>
+
     <div id="Contact" class="container-fluid bg-grey">
         <h2 align="center">CONTACT</h2>
         <div class="row" align="center">
             <p><span class="glyphicon glyphicon-map-marker"></span> Vazhakulam, Kerala</p>
             <p><span class="glyphicon glyphicon-phone"></span> Jose Francis (+91 94954 2659)</p>
             <p><span class="glyphicon glyphicon-envelope"></span> bodhiofficial@gmail.com</p>
-            <div id="fb">
-                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fbodhitechfest%2F&width=450&layout=standard&action=like&size=small&show_faces=false&share=true&height=35&appId=764622547018455" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-            </div>
+            <div id="fb" ><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fbodhitechfest%2F&width=450&layout=standard&action=like&size=small&show_faces=false&share=true&height=35&appId=764622547018455" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
+
         </div>
     </div>
     <div id="map"></div>
     <script>
-    function initMap() {
-        var uluru = {
-            lat: 9.9511,
-            lng: 76.6306
-        };
+      function initMap() {
+        var uluru = {lat: 9.9511, lng: 76.6306};
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 16,
-            scrollwheel: false,
-            draggable: false,
+            scrollwheel:false,
+            draggable:false,
             center: uluru
         });
         var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
+          position: uluru,
+          map: map
         });
-    }
+      }
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVHiJV7c87Cpn13QAmR5ZLQKJmg2YlvpM&callback=initMap">
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVHiJV7c87Cpn13QAmR5ZLQKJmg2YlvpM&callback=initMap">
     </script>
+
     <footer class="container-fluid text-center">
-        <div id="bug" class="animated rubberBand">
-            <a href="#page-top" title="Go to Top" class="container-fluid">
-                <span class="glyphicon glyphicon-chevron-up"></span>
-            </a>
+    <div id="bug" class="animated rubberBand">
+        <a href="#page-top" title="Go to Top" class="container-fluid">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
         </div>
-    </footer>
+            </footer>
+
+
     <script src="bootstrap/jquery.bootstrap-autohidingnavbar.min.js"></script>
     <script>
-    $(".navbar-fixed-top").autoHidingNavbar({
-
-    });
+        $(".navbar-fixed-top").autoHidingNavbar({
+        });
     </script>
+
     <script>
-    function isElementInViewport(elem) {
-        var $elem = $(elem);
-        var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
-        var viewportTop = $(scrollElem).scrollTop();
-        var viewportBottom = viewportTop + $(window).height();
-        var elemTop = Math.round($elem.offset().top);
-        var elemBottom = elemTop + $elem.height();
-
-        return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+        function isElementInViewport(elem) {
+    var $elem = $(elem);
+    var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+    var viewportTop = $(scrollElem).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+    var elemTop = Math.round( $elem.offset().top );
+    var elemBottom = elemTop + $elem.height();
+    return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
     }
-
     function checkAnimation() {
         var $elem = $('.bar .level');
         if ($elem.hasClass('start')) return;
-
-        $elem.addClass('start');
+            $elem.addClass('start');
+        }
     }
-    }
-    $(window).scroll(function() {
+    $(window).scroll(function(){
         checkAnimation();
     });
-
     $('#rot_hold').hide();
-    var is_on = 0,
-        sound_off = 0;
-    $('#sound').click(function() {
+    var is_on=0,sound_off=0;
+    $('#sound').click(function(){
         toggleMuteAudio();
         $('#sound_on').toggle(200);
         $('#sound_off').toggle(200);
     });
-
-    function toggleMuteAudio() {
-        $(".audioDemo").prop("muted", !$(".audioDemo").prop("muted"));
+    function toggleMuteAudio(){
+    $(".audioDemo").prop("muted",!$(".audioDemo").prop("muted"));
     }
     </script>
-    <script>
-    function setModalMaxHeight(element) {
-        this.$element = $(element);
-        this.$content = this.$element.find('.modal-content');
-        var borderWidth = this.$content.outerHeight() - this.$content.innerHeight();
-        var dialogMargin = $(window).width() < 768 ? 20 : 60;
-        var contentHeight = $(window).height() - (dialogMargin + borderWidth);
-        var headerHeight = this.$element.find('.modal-header').outerHeight() || 0;
-        var footerHeight = this.$element.find('.modal-footer').outerHeight() || 0;
-        var maxHeight = contentHeight - (headerHeight + footerHeight);
 
+    <script>
+        function setModalMaxHeight(element) {
+        this.$element     = $(element);
+        this.$content     = this.$element.find('.modal-content');
+        var borderWidth   = this.$content.outerHeight() - this.$content.innerHeight();
+        var dialogMargin  = $(window).width() < 768 ? 20 : 60;
+        var contentHeight = $(window).height() - (dialogMargin + borderWidth);
+        var headerHeight  = this.$element.find('.modal-header').outerHeight() || 0;
+        var footerHeight  = this.$element.find('.modal-footer').outerHeight() || 0;
+        var maxHeight     = contentHeight - (headerHeight + footerHeight);
         this.$content.css({
             'overflow': 'hidden'
         });
-
         this.$element
-            .find('.modal-body').css({
-                'max-height': maxHeight,
-                'overflow-y': 'auto'
-            });
+        .find('.modal-body').css({
+            'max-height': maxHeight,
+            'overflow-y': 'auto'
+        });
     }
-
     $('.modal').on('show.bs.modal', function() {
         $(this).show();
         setModalMaxHeight(this);
     });
-
     $(window).resize(function() {
         if ($('.modal.in').length != 0) {
             setModalMaxHeight($('.modal.in'));
         }
     });
     </script>
+
+
     <script>
-    $('#modal1').modal();
+        $('#modal1').modal();
     </script>
-    <script>
-    $(document).ready(function() {
+
+
+     <script>
+        $(document).ready(function(){
             $(".navbar a, footer a[href='#page-top").on('click', function(event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 900, function() {
-                        window.location.hash = hash;
-                    });
-                } // End if
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                }, 900, function(){
+                    window.location.hash = hash;
+                });
+            } // End if
             });
             $(window).scroll(function() {
-                $(".slideanim").each(function() {
+                $(".slideanim").each(function(){
                     var pos = $(this).offset().top;
                     var winTop = $(window).scrollTop();
                     if (pos < winTop + 600) {
-                        $(this).addClass("slide");
+                    $(this).addClass("slide");
                     }
                 });
             });
         })
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-91116103-1', 'auto');
-    ga('send', 'pageview');
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-91116103-1', 'auto');
+        ga('send', 'pageview');
     </script>
+
     <script>
     $(function() {
-
-        var Countdown = function(options) {
-            $.extend(this, {
-                endDate: new Date(2017, 01, 17, 08, 00, 00, 0)
-            }, options);
-
-            this.cache();
-            this.bind();
-
-            return this;
-        };
-        $.extend(Countdown.prototype, {
-            cache: function() {
-                this.date = new Date();
-                this.secCounter = parseInt((this.endDate - this.date) / 1000);
-            },
-            bind: function() {
-                this.timer();
-            },
-            timer: function() {
-                var timeInSec = this.secCounter,
-                    $secondsCircle = $('.seconds').closest('.time-circle').find('.progress'),
-                    $minutesCircle = $('.minutes').closest('.time-circle').find('.progress'),
-                    $hoursCircle = $('.hours').closest('.time-circle').find('.progress'),
-                    $daysCircle = $('.days').closest('.time-circle').find('progress'),
-                    $seconds = $('.seconds'),
-                    $minutes = $('.minutes'),
-                    $hours = $('.hours')
-                $days = $('.days');
-                $weeks = $('.weeks')
-
-                function pad(number) {
-                    return (number < 10 ? '0' : '') + number
-                }
-
-                function setScale(type, degree) {
-                    type.css({
-                        '-webkit-transform': 'rotate(' + -degree * 6 + 'deg)',
-                        '-moz-transform': 'rotate(' + -degree * 6 + 'deg)',
-                        '-ms-transform': 'rotate(' + -degree * 6 + 'deg)',
-                        '-o-transform': 'rotate(' + -degree * 6 + 'deg)',
-                        'transform': 'rotate(' + -degree * 6 + 'deg)'
-                    });
-                };
-
-                var setInterv = setInterval(function() {
-
-                    (timeInSec > 0 ? timeInSec-- : timeInSec = 0);
-
-                    var getSeconds = timeInSec % 60,
-                        getMinutes = Math.floor(timeInSec / 60 % 60),
-                        getHours = Math.floor(timeInSec / 3600 % 24),
-                        getDays = Math.floor(timeInSec / 86400 % 7),
-                        getWeeks = Math.floor(timeInSec / 604800);
-
-                    $seconds.text(pad(getSeconds));
-                    $minutes.text(pad(getMinutes));
-                    $hours.text(pad(getHours));
-                    $days.text(pad(getDays));
-                    $weeks.text(pad(getWeeks));
-
-                    setScale($secondsCircle, getSeconds);
-                    setScale($minutesCircle, getMinutes);
-                    setScale($hoursCircle, getHours);
-                    setScale($daysCircle, getDays);
-                    setScale($weeksCircle, getWeeks);
-
-                    if (timeInSec <= 0) {
-                        clearInterval(setInterv);
-                        console.log('End of counting');
-                    }
-
-                }, 1000);
+      var Countdown = function(options) {
+        $.extend(this, {
+          endDate: new Date(2017, 01, 17, 08, 00, 00, 0)
+        }, options);
+        this.cache();
+        this.bind();
+        return this;
+      };
+      $.extend(Countdown.prototype, {
+        cache: function() {
+          this.date = new Date();
+          this.secCounter = parseInt((this.endDate - this.date) / 1000);
+        },
+        bind: function() {
+          this.timer();
+        },
+        timer: function() {
+          var timeInSec = this.secCounter,
+            $secondsCircle = $('.seconds').closest('.time-circle').find('.progress'),
+            $minutesCircle = $('.minutes').closest('.time-circle').find('.progress'),
+            $hoursCircle = $('.hours').closest('.time-circle').find('.progress'),
+            $daysCircle = $('.days').closest('.time-circle').find('progress'),
+            $seconds = $('.seconds'),
+            $minutes = $('.minutes'),
+            $hours = $('.hours')
+            $days = $('.days');
+            $weeks = $('.weeks')
+          function pad(number) {
+            return (number < 10 ? '0' : '') + number
+          }
+          function setScale(type, degree) {
+            type.css({
+              '-webkit-transform': 'rotate(' + -degree * 6 + 'deg)',
+              '-moz-transform': 'rotate(' + -degree * 6 + 'deg)',
+              '-ms-transform': 'rotate(' + -degree * 6 + 'deg)',
+              '-o-transform': 'rotate(' + -degree * 6 + 'deg)',
+              'transform': 'rotate(' + -degree * 6 + 'deg)'
+            });
+          };
+          var setInterv = setInterval(function() {
+            (timeInSec > 0 ? timeInSec-- : timeInSec = 0);
+            var getSeconds = timeInSec % 60,
+              getMinutes = Math.floor(timeInSec / 60 % 60),
+              getHours = Math.floor(timeInSec / 3600 % 24),
+              getDays = Math.floor(timeInSec / 86400 % 7),
+              getWeeks = Math.floor(timeInSec / 604800);
+            $seconds.text(pad(getSeconds));
+            $minutes.text(pad(getMinutes));
+            $hours.text(pad(getHours));
+            $days.text(pad(getDays));
+            $weeks.text(pad(getWeeks));
+            setScale($secondsCircle, getSeconds);
+            setScale($minutesCircle, getMinutes);
+            setScale($hoursCircle, getHours);
+            setScale($daysCircle, getDays);
+            setScale($weeksCircle, getWeeks);
+            if (timeInSec <= 0) {
+              clearInterval(setInterv);
+              console.log('End of counting');
             }
-        });
-        window.Countdown = Countdown;
+          }, 1000);
+        }
+      });
+      window.Countdown = Countdown;
     });
-
     $(function() {
-        var app = new Countdown({
-            //properties
-            //endDate: new Date(year, month, day, hour, minute, second, miliseco)
-        });
+      var app = new Countdown({
+        //properties
+        //endDate: new Date(year, month, day, hour, minute, second, miliseco)
+      });
     });
     </script>
-</body>
 
+</body>
 </html>
