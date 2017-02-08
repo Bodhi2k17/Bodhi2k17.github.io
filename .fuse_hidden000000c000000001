@@ -545,17 +545,7 @@
 	    background: #2C261A;
 	}
 	.img-center {
-	 	margin:0 auto;
-	}
-	.modal-body{
-		margin-top:50px;
-	}
-	.modal-body *{
-		max-width: 100%;
-	}
-	::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
+		margin:0 auto;
 	}
   	</style>
 
@@ -592,7 +582,7 @@
 	  	  		<div class="item active">
 	      			<img src="./images/bodhi.png" alt="bodhi">
 	    		</div>
-	  	  		<div class="countdown text-center item active hidden-xs">
+	  	  		<div class="countdown text-center item active">
 	  	  			<div class="time-circle">
 				      <div class="progress"></div>
 				      <span class="time weeks"></span>
@@ -826,7 +816,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-lg-offset-0">
+                    <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>DEPARTMENT OF CIVIL ENGINEERING</h2>
                             <hr class="star-primary">
@@ -972,12 +962,12 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-lg-offset-0">
+                    <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>DEPARTMENT OF COMPUTER SCIENCE &AMP; ENGINEERING</h2>
                             <hr class="star-primary">
                             <img src="./images/cs.png" class="img-responsive img-centered" alt="CSE ENGINEERING" align="center">
-                            <p><br>Staff In-Charge: Dr. Anishin Raj M. M.<br>&#9;Mr. Andrews Jose<br>Augustine Johny (S8 CSE B) (9447066854)<br>&#9;Aju Jose (S8 CSE A) (9496651308)</p>
+                            <p> Staff In-Charge: Dr. Anishin Raj M. M.<br>&#9;Mr. Andrews Jose<br>Augustine Johny (S8 CSE B) (9447066854)<br>&#9;Aju Jose (S8 CSE A) (9496651308)</p>
                             <div class="container">
 							<div class="panel-group" id="csaccordion">
 							    <div class="panel panel-default">
@@ -999,7 +989,7 @@
 							      		</div>
 							      		<div id="cscollapse2" class="panel-collapse collapse">
 							        	<div class="panel-body">DESCRIPTION</div>
-							        <div class="panel-footer">First Prize : 3K<br>Second Prize : 2K<br>Faculty in charge : Mrs. Resmi Cherian<br>Student Coordinator: Alwin D. George (8593041887)</div>
+							        <div class="panel-footer"><br>First Prize : 3K<br>Second Prize : 2K<br>Faculty in charge : Mrs. Resmi Cherian<br>Student Coordinator: Alwin D. George (8593041887)</div>
 							      </div>
 							    </div>
 							    <div class="panel panel-default">
@@ -1010,7 +1000,7 @@
 							      </div>
 							      <div id="cscollapse3" class="panel-collapse collapse">
 							        <div class="panel-body">DESCRIPTION</div>
-							        <div class="panel-footer">First Prize : 8K<br>Second Prize : 5K<br>Faculty in charge : Mr. Sivadas T. Nair<br>Student Coordinator: Chris Aby Antony (8281888117)</div>
+							        <div class="panel-footer"><br>First Prize : 8K<br>Second Prize : 5K<br>Faculty in charge : Mr. Sivadas T. Nair<br>Student Coordinator: Chris Aby Antony (8281888117)</div>
 							      </div>
 							    </div>
 							    <div class="panel panel-default">
@@ -1021,7 +1011,7 @@
 							      </div>
 							      <div id="cscollapse4" class="panel-collapse collapse">
 							        <div class="panel-body">DESCRIPTION</div>
-							        <div class="panel-footer">First Prize : 6K<br>Second Prize : 2K<br>Faculty in charge : Mrs. Ritty Jacob<br>Student Coordinator: Kiran Tomy (9846453167)</div>
+							        <div class="panel-footer"><br>First Prize : 6K<br>Second Prize : 2K<br>Faculty in charge : Mrs. Ritty Jacob<br>Student Coordinator: Kiran Tomy (9846453167)</div>
 							      </div>
 							    </div>
 							    <div class="panel panel-default">
@@ -1032,7 +1022,7 @@
 							      </div>
 							      <div id="cscollapse5" class="panel-collapse collapse">
 							        <div class="panel-body">Test your typing Skills</div>
-							        <div class="panel-footer">First Prize : 3K<br>Second Prize : 2K<br>Faculty in charge : Mrs. Nimmy<br>Student Coordinator: Nithin Vincent</div>
+							        <div class="panel-footer"><br>First Prize : 3K<br>Second Prize : 2K<br>Faculty in charge : Mrs. Nimmy<br>Student Coordinator: Nithin Vincent</div>
 							      </div>
 							    </div><div class="panel panel-default">
 							      <div class="panel-heading">
@@ -1042,7 +1032,7 @@
 							      </div>
 							      <div id="cscollapse6" class="panel-collapse collapse">
 							        <div class="panel-body">Synchronized Coders</div>
-							        <div class="panel-footer">First Prize : 6K<br>Second Prize : 2K<br>Faculty in charge : Mrs. Sreeja S. Pillai<br>Student Coordinator: Sebin Sunny (8086215493)</div>
+							        <div class="panel-footer"><br>First Prize : 6K<br>Second Prize : 2K<br>Faculty in charge : Mrs. Sreeja S. Pillai<br>Student Coordinator: Sebin Sunny (8086215493)</div>
 							      </div>
 							    </div>
 							    <div class="panel panel-default">
@@ -1053,7 +1043,7 @@
 							      </div>
 							      <div id="cscollapse7" class="panel-collapse collapse">
 							        <div class="panel-body">DESCRIPTION</div>
-							        <div class="panel-footer">Faculty in charge : Mr. Jobin Jose<br>Student Coordinator: Ajay Geo Jose</div>
+							        <div class="panel-footer"><br>Faculty in charge : Mr. Jobin Jose<br>Student Coordinator: Ajay Geo Jose</div>
 							      </div>
 							    </div>
 							  </div>
@@ -1075,7 +1065,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-lg-offset-0">
+                    <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>DEPARTMENT OF ELECTRICAL &AMP; ELECTRONICS ENGINEERING</h2>
                             <hr class="star-primary">
@@ -1124,7 +1114,7 @@
 							      	</div>
 							      	<div id="eeecollapse4" class="panel-collapse collapse">
 							        	<div class="panel-body"><br>DESCRIPTION</div>
-							        	<div class="panel-footer"><br>First Prize : 4K<br>Second Prize : 2K<br>Faculty in charge : Mr.Jose Jacob, Mr.Aryasree G.<br>Student Coordinator: Febin Paul (9072723917)</div>
+							        	<div class="panel-footer"><br>First Prize : 4K<br>Second Prize : 2K<br>Faculty in charge : Mr.Jose Jacob, Mr.Aryasree G<br>Student Coordinator: Febin Paul (9072723917)</div>
 							      </div>
 							    </div>
 							  </div>
@@ -1146,7 +1136,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-lg-offset-0">
+                    <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>DEPARTMENT OF ELECTRONICS &AMP; COMMUNICATION ENGINEERING</h2>
                             <hr class="star-primary">
@@ -1262,7 +1252,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-lg-offset-0">
+                    <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>DEPARTMENT OF MECHANICAL ENGINEERING</h2>
                             <hr class="star-primary">
@@ -1361,7 +1351,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-lg-offset-0">
+                    <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>DEPARTMENT OF INFORMATION TECHNOLOGY</h2>
                             <hr class="star-primary">
@@ -1454,12 +1444,12 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-lg-offset-0">
+                    <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>MBA</h2>
                             <hr class="star-primary">
                             <img src="./images/mba.jpg" class="img-responsive img-centered" alt="MBA" align="center">
-                            <p><br>Staff In-charge: Dr. Anu George<br>Student Coordinator: Mr. Albin Jose (7025087164)<br>Ms. Reshma Baby (9746756700)</p>
+                            <p>Staff In-charge: ____<br>Student Coordinator: ____</p>
                             <div class="container">
 								<div class="panel-group" id="mbaaccordion">
 							    	<div class="panel panel-default">
@@ -1470,7 +1460,7 @@
 							      		</div>
 								      	<div id="mbasscollapse1" class="panel-collapse collapse">
 								        	<div class="panel-body">DESCRIPTION</div>
-        									<div class="panel-footer">First Prize: 15k<br>Faculty in charge : Mr. Sreenadh R.<br>Student Coordinator: Mr. Richin Philip Mathew (8289976049)<br>Ms. Anna Saly Jose (9562313201)</div>
+        									<div class="panel-footer"><br>First Prize: 10k<br>Second Prize: 5k<br>Faculty in charge : ____<br>Student Coordinator: ____</div>
 								      	</div>
 								    </div>
 								    <div class="panel panel-default">
@@ -1481,7 +1471,7 @@
 								    	</div>
 								    	<div id="mbacollapse2" class="panel-collapse collapse">
 								       		<div class="panel-body">DESCRIPTION</div>
-        									<div class="panel-footer">First Prize: 12k<br>Faculty in charge : Ms. Abmily Jose<br>Student Coordinator: Mr. Sanal Vinod (9744910279)<br>Mr. Manu G. Puthooran (9539550954)</div>
+        									<div class="panel-footer"><br>First Prize: 10K<br>Second Prize: 5K<br>Faculty in charge : ___<br>Student Coordinator: ___</div>
 								    	</div>
 							    	</div>
 							    	<div class="panel panel-default">
@@ -1492,7 +1482,7 @@
 							      		</div>
 							      		<div id="mbacollapse3" class="panel-collapse collapse">
 							        		<div class="panel-body">DESCRIPTION</div>
-        									<div class="panel-footer">First Prize: 12k<br>Faculty in charge : Ms. Liz Emmanuel<br>Student Coordinator: Mr. Basil Shibu (7736179072)<br>Ms. Alphonsa Johnson (9497027228)</div>
+        									<div class="panel-footer">First Prize: 10K<br>Second Prize: 5k<br>Faculty in charge : ____<br>Student Coordinator: ___</div>
 							      		</div>
 							    	</div>
 							    	<div class="panel panel-default">
@@ -1502,8 +1492,8 @@
 							        		</h4>
 							      		</div>
 							      		<div id="mbacollapse4" class="panel-collapse collapse">
-							        		<div class="panel-body"><br>Paper Presentation</div>
-        									<div class="panel-footer">First Prize: 3k<br>Second Prize: 1k<br>Faculty in charge : Prof. C. S. Hariharan<br>Student Coordinator: Mr. Elby Joseph (8547679204)<br>Ms. Kavyamol M. V. (9947011050)</div>
+							        		<div class="panel-body">EXHIBITION<br>DESCRIPTION</div>
+        									<div class="panel-footer"><br>Faculty in charge : ____<br>Student Coordinator: _____</div>
 							      		</div>
 							    	</div>
 							  	</div>
