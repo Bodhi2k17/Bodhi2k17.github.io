@@ -13,9 +13,10 @@
     <link href="https://fonts.googleapis.com/css?family=Cookie|Great+Vibes|Luckiest+Guy|Rock+Salt|Kreon" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Acme|Noticia+Text" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cookie|Great+Vibes|Luckiest+Guy|Rock+Salt|Kreon" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Acme|Noticia+Text" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Bitter|Carter+One|Merienda|Sansita" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Noticia+Text" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Bitter|Carter+One|Merienda|Sansita|Satisfy|Underdog" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
-
+	<script src="./js/typed.js"></script>
+	
     <script>
         $(function () {
         $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
@@ -23,31 +24,31 @@
     </script>
      <script src="./js/flipclock.min.js"></script>
     <style>
-    .contacts {
-        padding: 25px;
-        border-radius: 1%;
-        text-align: center;
-    }
-    
-    .roundImg {
-        max-width: 100px;
-        max-height: 100px;
-        border-radius: 100%;
-        margin: 20px;
-        box-shadow: 1px 1px 1px 1px grey;
-    }
-    
-    .contact {
-        padding: 25px;
-        background-color: white;
-        border-radius: 10%;
-        margin: 40px;
-        box-shadow: 5px 5px grey;
-    }
-    footer img {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+
+    .typed-cursor{
+	    opacity: 1;
+	    font-size: 50;
+	    font-family: 'Satisfy', cursive;
+	    background: #9C27B0
+	    color: #FFFFFF;
+
+	}
+	span .typed-cursor{
+		display: none;
+	}
+	span #end{
+		display: none;
+	}
+	
+	.element{
+	    font-size: 50;
+	    font-family: 'Satisfy', cursive;
+	    background: #9C27B0
+	    color: #FFFFFF;
+	    -webkit-animation: blink 0.7s infinite;
+	}
+	
+	
     .inline-block {
       display: -moz-inline-stack;
       display: inline-block;
@@ -557,6 +558,19 @@
     width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
     }
+
+    #end{
+    	color: #F50057;
+    	font-family: 'Underdog', cursive;
+    	font-size: 20px;
+    	text-align: center;
+    }
+    .well{
+    	background: #FFFF8D;
+    	width: : 70%;
+    	height: 50%;
+    }
+    
     </style>
 
     <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png" />
@@ -629,10 +643,13 @@
     </div>
 
     <div id="Highlight">
-       <h1 align="center"><strong>HIGHLIGHTS</strong></h1><br>
+    	<h1 align="center"><strong>HIGHLIGHTS</strong></h1><br>
         <div class="container">
             <div class="col-sm-6" align="center"><br><br>
-                <img src="./images/logoGif.gif" width="300" height="auto">
+                <img src="./images/logoGif.gif" width="300" height="auto"><br>
+				<span class="element typed-cursor">
+					<h1 id="element" style="font-family: 'Satisfy', cursive; color: #9C27B0;"></h1>
+				</span>
             </div>
             <div id="myCarousel" class="col-sm-6 carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -968,10 +985,121 @@
                             <p><br>Staff In-Charge: Dr. Anishin Raj M. M.<br>&#9;Mr. Andrews Jose<br>Augustine Johny (S8 CSE B) (9447066854)<br>&#9;Aju Jose (S8 CSE A) (9496651308)</p>
                             <div class="container">
                             <div class="panel-group" id="csaccordion">
+                                
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse4">1. Techno Bazar</a>
+                                    </h4>
+                                  </div>
+                                  <div id="cscollapse4" class="panel-collapse collapse">
+                                    <div class="panel-body"><h2>Rules</h2>
+                                    <ol>
+										<li>Each team should contain 2 members.</li>
+										<li>Each team should bring smart phones with internet connection and dubsmash app installed. </li>
+										<li>The candidates should report at the venue on or before 11:45 AM. </li>
+									</ol>
+									<h2>PRELIMS</h2>
+
+										Dubsmash
+										<ol>
+											<li>Each team will be provided with an audio sample which is of 30 to 45 seconds.</li>
+											<li>The team should perform the Dubsmash for their provided audio when they are called.</li>
+											<li>Points will be valued based on their expression, body language and mouth movement to their respective audio.</li>
+											<li>Judges decision is final.</li>
+										</ol>
+									<h2>SEMIFINALS</h2>
+
+										Designing Skills
+										<ol>
+											<li>In this round the teams are supposed to present a poster for the product which they are allotted.</li>
+											<li>Gimp will be provided at the venue.</li>
+											<li>No other external software other than those provided by the coordinators will be allowed.</li>
+											<li>No internet access or external plugins will be provided.</li>
+											<li>Judging will be thoroughly based on the Quality, Creativity and Perfection.</li>
+											<li>Decision of Judges shall be final.</li>
+											<li>Poor images will be declared as Invalid entry.</li>
+										</ol>
+
+									<h2>FINALS</h2> 
+
+										Adzap
+										<ol>
+											<li>Each team will be given a Technical product name.</li>
+											<li>The team should perform Adzap for their given product for 3 to 5 minutes.</li>
+											<li>Product name and Tag line should be mentioned during performance.</li>
+											<li>Usage of Mobiles by the team during the event will lead to elimination</li>
+											<li>The performance must be decent with no vulgar act.</li>
+											<li>The performance is Judged based on the clarity thought, innovativeness, humor, team co-ordination and expression.</li>
+										</ol>
+									</div>
+                                    <div class="panel-footer">First Prize : 6K<br>Second Prize : 2K<br>Faculty in charge : Mrs. Ritty Jacob<br>Student Coordinator: Kiran Tomy (9846453167)</div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse5">2. TWERQY</a>
+                                    </h4>
+                                  </div>
+                                  <div id="cscollapse5" class="panel-collapse collapse">
+                                    <div class="panel-body"><h2>Test your typing Skills</h2>
+                                    	<br>Rules
+                                    	<ol>
+											<li>Individual registration only. </li>
+											<li>Typing speed and accuracy are tested.</li>
+											<li>Event consists of 3 rounds.</li>
+											<li>Registration will be closed exactly 30 min prior to the event.</li>
+											<li>In any case, the decision of the judges will be final.</li>
+											<li>Directions provided by the coordinators should be strictly adhered to.</li>
+										</ol>
+                                    </div>
+                                    <div class="panel-footer">First Prize : 3K<br>Second Prize : 2K<br>Faculty in charge : Mrs. Nimmy<br>Student Coordinator: Nithin Vincent</div>
+                                  </div>
+                                </div><div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse6">3. C-SWAP</a>
+                                    </h4>
+                                  </div>
+                                  <div id="cscollapse6" class="panel-collapse collapse">
+                                    <div class="panel-body"><h2>Synchronized Coders</h2>
+                                    <br>Rules
+                                    <ol>	
+										<li>The programme consist of two sections.</li>
+										<li>The first section is the priliminary test and the second section is the coding section.</li>
+										<li>The team has to pass the priliminary test to qualify for the second section. </li>
+										<li>Each team should contain only two members.</li>
+									</ol>
+
+									<br>Rules for coding section:
+									<ol>
+										<li>Time alloted for each question is 30 minutes.</li>
+										<li>The first member of the team has to start coding the program, and the second member should wait outside.</li>
+										<li>After 15 minutes the second member has to come in and the first member has to go out.</li>
+										<li>Communication between the team members are not allowed.</li>
+										<li>Comments are not allowed in the program code.</li>
+										<li>Decisions made by the programme coordinators will be the final.</li>
+									</ol>
+									</div>
+                                    <div class="panel-footer">First Prize : 6K<br>Second Prize : 2K<br>Faculty in charge : Mrs. Sreeja S. Pillai<br>Student Coordinator: Sebin Sunny (8086215493)</div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse7">4. Gadget Show</a>
+                                    </h4>
+                                  </div>
+                                  <div id="cscollapse7" class="panel-collapse collapse">
+                                    <div class="panel-body">DESCRIPTION</div>
+                                    <div class="panel-footer">Faculty in charge : Mr. Jobin Jose<br>Student Coordinator: Ajay Geo Jose (8111902413)</div>
+                                  </div>
+                                </div>
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#csaccordion" href="#ccsscollapse1">1. Technical Talk</a>
+                                            <a data-toggle="collapse" data-parent="#csaccordion" href="#ccsscollapse1">5. Technical Talk</a>
                                         </h4>
                                     </div>
                                     <div id="ccsscollapse1" class="panel-collapse collapse">
@@ -982,7 +1110,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse2">2. Paper Presentation</a>
+                                                <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse2">6. Paper Presentation</a>
                                             </h4>
                                         </div>
                                         <div id="cscollapse2" class="panel-collapse collapse">
@@ -993,55 +1121,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading">
                                     <h4 class="panel-title">
-                                      <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse3">3. Gaming</a>
+                                      <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse3">7. Gaming</a>
                                     </h4>
                                   </div>
                                   <div id="cscollapse3" class="panel-collapse collapse">
                                     <div class="panel-body">DESCRIPTION</div>
                                     <div class="panel-footer">First Prize : 8K<br>Second Prize : 5K<br>Faculty in charge : Mr. Sivadas T. Nair<br>Student Coordinator: Chris Aby Antony (8281888117)</div>
-                                  </div>
-                                </div>
-                                <div class="panel panel-default">
-                                  <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                      <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse4">4. Techno Bazar</a>
-                                    </h4>
-                                  </div>
-                                  <div id="cscollapse4" class="panel-collapse collapse">
-                                    <div class="panel-body">DESCRIPTION</div>
-                                    <div class="panel-footer">First Prize : 6K<br>Second Prize : 2K<br>Faculty in charge : Mrs. Ritty Jacob<br>Student Coordinator: Kiran Tomy (9846453167)</div>
-                                  </div>
-                                </div>
-                                <div class="panel panel-default">
-                                  <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                      <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse5">5. TWERQY</a>
-                                    </h4>
-                                  </div>
-                                  <div id="cscollapse5" class="panel-collapse collapse">
-                                    <div class="panel-body">Test your typing Skills</div>
-                                    <div class="panel-footer">First Prize : 3K<br>Second Prize : 2K<br>Faculty in charge : Mrs. Nimmy<br>Student Coordinator: Nithin Vincent</div>
-                                  </div>
-                                </div><div class="panel panel-default">
-                                  <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                      <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse6">6. C-SWAP</a>
-                                    </h4>
-                                  </div>
-                                  <div id="cscollapse6" class="panel-collapse collapse">
-                                    <div class="panel-body">Synchronized Coders</div>
-                                    <div class="panel-footer">First Prize : 6K<br>Second Prize : 2K<br>Faculty in charge : Mrs. Sreeja S. Pillai<br>Student Coordinator: Sebin Sunny (8086215493)</div>
-                                  </div>
-                                </div>
-                                <div class="panel panel-default">
-                                  <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                      <a data-toggle="collapse" data-parent="#csaccordion" href="#cscollapse7">7. Gadget Show</a>
-                                    </h4>
-                                  </div>
-                                  <div id="cscollapse7" class="panel-collapse collapse">
-                                    <div class="panel-body">DESCRIPTION</div>
-                                    <div class="panel-footer">Faculty in charge : Mr. Jobin Jose<br>Student Coordinator: Ajay Geo Jose (8111902413)</div>
                                   </div>
                                 </div>
                               </div>
@@ -1298,22 +1383,18 @@
                             <img src="./images/me.png" class="img-responsive img-centered rcorner" alt="ME ENGINEERING" align="middle">
                             <p> <br>Staff In-Charge: Frenosh k Francis, Ajo Issac John
                                 <br>Student coordinators: Albin Johnson (8547764120), Ebin Eldhose (8157989289)
-                                <br>Documentation Committee: Nibin B, Nithish
-                                <br>Discipline Committee: Vinoj k, Unnikrishnan T G
-                                <br>Registration: Manu Joy C, Abraham Antony
-                                <br>Invitation Committee: Aravind S, Basil Baby
                             </p>
                             <div class="container">
                                 <div class="panel-group" id="meaccordion">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#meaccordion" href="#messcollapse1">1. MEXhaust (Auto show)</a>
+                                                <a data-toggle="collapse" data-parent="#meaccordion" href="#messcollapse1">1. HOT WHEELS</a>
                                             </h4>
                                         </div>
                                         <div id="messcollapse1" class="panel-collapse collapse">
-                                            <div class="panel-body">An auto show, also known as a motor show or car show, is a public exhibition of current automobile models, debuts, concept cars, or out-of-production classics.</div>
-                                            <div class="panel-footer">Prize : 1L<br>Faculty in charge : Eldhose Paul, Lovin Varghese, Abin Paul<br>Student Coordinator: Gino sunny(8301043489), Samuel Baby Mathew(7034908038)</div>
+                                            <div class="panel-body"><strong>Date of Event: 18-02-2017</strong><br>An auto show, also known as a motor show or car show, is a public exhibition of current automobile models, debuts, concept cars, or out-of-production classics.</div>
+                                            <div class="panel-footer">Prize : 1L<br>Faculty in charge : Eldhose Paul, Lovin Varghese, Abin Paul<br>Student Coordinator: Gino Sunny (S8 ME) (8301043489), Samuel Baby Mathew (S8 ME) (7034908038)</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
@@ -1323,8 +1404,8 @@
                                             </h4>
                                         </div>
                                         <div id="mecollapse2" class="panel-collapse collapse">
-                                            <div class="panel-body">A team may consist of 3 to 5 member Participants. These participants can be from same or different institutes.<br><strong>(1) Robo-race</strong><br>The maximum speed to beat another  machines on the given track to reach the final destination in minimum time.<br>Coordinator: Mishal musthafa, Jesbin Jose<br><strong>(2) Line Tracer</strong><br>An autonomous robot that can follow a white lined path placed over a black background.<br>Coordinator: Geo James, Nithin J Vattapara<br><strong> (3)Robo war</strong><br>All the robots with wireless control should be able to change frequencies (if required) or coded channels to prevent any radio conflicts , it may be changed before the start of the match to avoid frequency interference with other teams.<br>Rules:<br>1) The Robot may be wired or wireless.<br>2) IC engines, Inflammable, chemical, explosive weapons should not be used. Pneumatic devices are not   allowed.<br>3) For wired robot the wires should be slack at all times. The wires coming out of the robot should be   stacked as a single unit and must be properly insulated.<br>4) Batteries, if used, should not be damaged and leak-proof, else, it may lead to disqualification.<br>5) All decisions made by the committee and judges will be final<br>Coordinator: Bijo Peter, Rolvin Biju</div>
-                                            <div class="panel-footer"><br>First Prize : 25K<br>Faculty in charge : Rakesh Jose, Varun<br>Student Coordinator: Vignesh M, Martin Tom</div>
+                                            <div class="panel-body"><strong>Date of Event: 18-02-2017</strong><br>A team may consist of 3 to 5 member Participants. These participants can be from same or different institutes.<br><strong>(1) Robo-race</strong><br>The maximum speed to beat another  machines on the given track to reach the final destination in minimum time.<br>Coordinator: Mishal Musthafa (9020882841), Jesbin Jose (9656792522)<br><strong>(2) Line Tracer</strong><br>An autonomous robot that can follow a white lined path placed over a black background.<br>Coordinator: Geo James (8129221260), Nithin J Vattapara (9446459084)<br><strong> (3)Robo war</strong><br>All the robots with wireless control should be able to change frequencies (if required) or coded channels to prevent any radio conflicts , it may be changed before the start of the match to avoid frequency interference with other teams.<br>Rules:<br>1) The Robot may be wired or wireless.<br>2) IC engines, Inflammable, chemical, explosive weapons should not be used. Pneumatic devices are not   allowed.<br>3) For wired robot the wires should be slack at all times. The wires coming out of the robot should be   stacked as a single unit and must be properly insulated.<br>4) Batteries, if used, should not be damaged and leak-proof, else, it may lead to disqualification.<br>5) All decisions made by the committee and judges will be final<br>Coordinator: Bijo Peter (9400590977)</div>
+                                            <div class="panel-footer">First Prize : 25K<br>Faculty in charge : Rakesh Jose, Varun<br>Student Coordinator: Vignesh M (S8 ME) (8281961381), Martin Tom (S8 ME) (8281012063)</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
@@ -1334,8 +1415,8 @@
                                             </h4>
                                         </div>
                                         <div id="mecollapse3" class="panel-collapse collapse">
-                                            <div class="panel-body">Exhibition and on spot events.<br> (1) Mechathelon (Games)<br>(2)Assembly War</div>
-                                            <div class="panel-footer"><br>Faculty in charge : Arun K R, Arun Raphel<br>Student Coordinator: Betsin Alosious, Amal k Sasi, Steffin Reji<br>Art Works: Augustine Dani Jose, Aravind Raj</div>
+                                            <div class="panel-body"><strong>Date of Event: 17-02-2017 to 18-02-2017</strong><br>Exhibition and on spot events.<br> (1) Mechathelon (Games)<br>(2) Assembly War</div>
+                                            <div class="panel-footer">Faculty in charge : Arun K R, Arun Raphel<br>Student Coordinator: Betsin Alosious (S8 ME) (7025805281), Amal k Sasi (S8 ME) (9048787564), Steffin Reji (S8 ME) (9446789513)</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
@@ -1345,19 +1426,19 @@
                                             </h4>
                                         </div>
                                         <div id="mecollapse4" class="panel-collapse collapse">
-                                            <div class="panel-body">Brush your skills,present your technical and unveil yourself via aptitude test,written rounds,task completion and an onstage event.acquire the diadem of BEST ENGINEER.</div>
-                                            <div class="panel-footer"><br>First Prize : 6K<br>Faculty in charge :Eldhose Kurian, Sandeep<br>Student Coordinator: Yeldho Peter, Jacob kuriachan</div>
+                                            <div class="panel-body"><strong>Date of Event: 17-02-2017s</strong><br>Brush your skills,present your technical and unveil yourself via aptitude test,written rounds,task completion and an onstage event.acquire the diadem of BEST ENGINEER.</div>
+                                            <div class="panel-footer">Prize worth 6K<br>Faculty in charge :Eldhose Kurian, Sandeep<br>Student Coordinator: Yeldho Peter (S8 ME) (8281907564), Jacob kuriachan (S8 ME) (8281562489)</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#meaccordion" href="#mecollapse5">5. Sristi (Project Presentation)</a>
+                                                <a data-toggle="collapse" data-parent="#meaccordion" href="#mecollapse5">5. Sristi (Project Exhibition)</a>
                                             </h4>
                                         </div>
                                         <div id="mecollapse5" class="panel-collapse collapse">
-                                            <div class="panel-body">Participants can present their project models and exhibit it. The best project will be awarded. The decisions made by the committee and judges will be final.</div>
-                                            <div class="panel-footer"><br>First Prize : 6K<br>Faculty in charge : Tijo Jose, Aakash Paul Savio<br>Student Coordinator: Josemon George, Rahul Jose</div>
+                                            <div class="panel-body"><strong>Date of Event: 17-02-2017</strong><br>Participants can present their project models and exhibit it. The best project will be awarded. The decisions made by the committee and judges will be final.<br>Participants will be given 10 minutes for presentation and thereafter 5 minutes for interaction. Strictly technical paper competition.  <br><strong>ELIGIBILITY</strong>: Students of Btech/M.tech/MBA from AICTE approved Colleges are eligible to participate in the program.</div>
+                                            <div class="panel-footer">Prize worth 6K<br>Faculty in charge : Tijo Jose, Aakash Paul Savio<br>Student Coordinator: Josemon George (S8 ME) (9847597930), Rahul Jose (S8 ME) (8281464664)</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
@@ -1367,8 +1448,8 @@
                                             </h4>
                                         </div>
                                         <div id="mecollapse6" class="panel-collapse collapse">
-                                            <div class="panel-body"><strong>TIME<br>10:30am - 4:00pm<br>VENUE: IC LAB &AMP; B-203</strong></div>
-                                            <div class="panel-footer"><br>First Prize : 4.5K<br>Faculty in charge : Mrs.Anitta Thomas (9496825096)<br>Student Coordinator: Algin George (9847574865) (S6 EC B)<br>Irene George (9048857640) (S6 EC B)</div>
+                                            <div class="panel-body"><strong>TIME: 10:30am</strong></div>
+                                            <div class="panel-footer">Prizes Worth:7k<br>Staff in charge : Dr. Sajan T John, Joby George<br>Coordinators: Amal Joshy (S8 ME) (9947948995), Allen Francis Raju (S8 ME) (8089148928)</div>
                                         </div>
                                     </div>
                                 </div>
@@ -1551,13 +1632,14 @@
 
     <div id="About" class="container-fluid vjc-description about-page">
         <h2 class='text-center'>ABOUT BODHI</h2>
-        <p class='col-md-6 montserrat'>Bodhi is blah blah blah and blah. "Service of GOD through service of Humanity" is the driving motto of the Kothamangalam Diocese. Viswajyothi College of Engineering &amp; Technology is yet another hallmark of the commitment and experience of the Kothamangalam Diocese in the field of education. Our Vision Moulding Engineers par Excellence with Integrity Fairness and Human Values aims to mould Engineers for tomorrow for the welfare of mankind and Society. Viswajyothi College of Engineering and Technology is the one of the first Self Financing Engineering college in the state which started working in June 2001. </p>
+        <p class='col-md-6 montserrat'>BODHI 2k17, the Annual TechFest of Viswajyothi College Of Engineering and Technology, celebrates, fosters and proudly presents <strong>the pioneering and inquisitive minds of engineers</strong>.  A fete like no other, it has imbibed  the true spirit of science and technology, and presented  it in modes and manners, easily digested by the ragtag Generation X-ers for the past <strong>NUMBER</strong> years.  <strong>It's not all about exhibits and presentations</strong>; even engineers like to have their share of fun and games, (in a dignified manner, of course).</p> 
         <div class='col-md-6 text-center img-center center-block'>
             <img class='img-responsive' src="./images/BodhiOrange.png" height="779" width="550">
         </div>
-
     </div>
-
+    <div class="container-fluid well quote">
+        	<p id="end">So come along, and join us, On a Quest to Learn have fun, Learn something new and Feel like the sky is the limit....!!</p>
+    </div>
     <div id="Contact" class="container-fluid bg-grey">
         <h2 align="center">CONTACT</h2>
         <div class="row" align="center">
@@ -1633,7 +1715,15 @@
     $(".audioDemo").prop("muted",!$(".audioDemo").prop("muted"));
     }
     </script>
-
+    <script>
+		$(function(){
+		    $("#element").typed({
+		        strings: ["The doors have opened","For eyes to feast on!!", "and for our minds to ponder on..!!"],
+		        typeSpeed: 1.5
+		    });
+		});
+	</script>
+	
     <script>
         function setModalMaxHeight(element) {
         this.$element     = $(element);
