@@ -584,6 +584,44 @@
     #Contact{
     	margin-bottom: 20px;
     }
+        .col-group {
+	  overflow: hidden;
+	}
+	.col-group > div {
+	  padding: 1em;
+	}
+
+	@media screen and (min-width: 44em) {
+	  .col-group > div {
+	    float: left;
+	    width: 50%;
+	  }
+	  .col-group > div:nth-child(odd) {
+	    clear: left;
+	  }
+	}
+
+	@media screen and (min-width: 50em) {
+	  .col-group > div {
+	    float: left;
+	    width: 33.3333333%;
+	  }
+	  .col-group > div:nth-child(3n+1) {
+	    clear: left;
+	  }
+	  .col-group > div:nth-child(odd) {
+	    clear: none;
+	  }
+	}
+
+	@media screen and (min-width: 70em) {
+	  .col-group > div {
+	    width: 20%;
+	  }
+	  .col-group > div:nth-child(odd), .col-group > div:nth-child(3n+1) {
+	    clear: none;
+	  }
+	}
     </style>
 
     <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png" />
@@ -1328,8 +1366,23 @@
                                             </h4>
                                         </div>
                                         <div id="ececollapse5" class="panel-collapse collapse">
-                                            <div class="panel-body"><strong>TIME<br>10:30am - 4:00pm<br>VENUE: IC LAB &AMP; B-203</strong></div>
-                                            <div class="panel-footer">Total Prize : 3.5K<br>Faculty in charge : Mr.R Anil Kumar (9447659454)<br>Student Coordinator: Ashin Basil John (9544907374) (S8 EC A)<br>Parvathi R (9495762611) (S6 EC A)</div>
+                                            <div class="panel-body"><strong>Date: 17-02-2017<br>VENUE: IC LAB (B-203)</strong><br><br>Every Engineer needs to prove to the society that he is up for he challenges of the real word. <span style="font-size: 15px">BODHI 2K17</span> is the right opportunity to horn your skills. Prove Yourself.<br>
+                                            RULES<br>
+                                            <ul>
+                                            	<li>The interested candidates can exhibit their hobby circuit.</li>
+												<li>The competition is open to all students of Viswajyothi.</li>
+												<li>The maximum number of participants per group is limited to 2.<li>
+												<li>Electronic <span style="color: red">based</span> circuits are only allowed.</li>
+												<li>Electric power supply of 230V AC will be made available to participants.</li>
+												<li>The circuit  should be in live condition</li>
+												<li>Maximum 10 minutes will be allotted to each team to present their model in front of judges.</li>
+												<li>Participants must report at the venue at least 20 minutes before the event commences.</li>
+												<li>The organizers reserve the right to change/update the rules of the contest at any point of time and will do their best to inform that to the participants.  However, it is the responsibility of the respective teams to keep themselves updated.</li>
+												<li>Decision of the judges and the event Heads, shall be treated as final</li> 
+												<li>The participants should come with their college id card.</li>
+												<li>All the candidates will get participation certificates.</li>
+                                            </ul><br><strong>Registration FEE RS. 30/- per member.</strong></div>
+                                            <div class="panel-footer">First Prize : 2k<br>Second Prize: 1k<br>Faculty in charge: Mrs. Rose Marykuruvithadam<br>Student Coordinator: Ashin Basil John (9544907374) (S8 EC A)<br>Parvathi R (9495762611) (S6 EC A)</div>
                                         </div>
                                     </div>
                                     <div class="panel panel-default">
@@ -1668,9 +1721,9 @@
 
     <div id="About" class="container-fluid vjc-description about-page">
         <h2 class='text-center'>ABOUT BODHI</h2>
-        <p class='col-md-6 montserrat'>BODHI 2k17, the Annual TechFest of Viswajyothi College Of Engineering and Technology, celebrates, fosters and proudly presents <strong>the pioneering and inquisitive minds of engineers</strong>.  A fete like no other, it has imbibed  the true spirit of science and technology, and presented  it in modes and manners, easily digested by the ragtag Generation X-ers for the past <strong>NUMBER</strong> years.  <strong>It's not all about exhibits and presentations</strong>; even engineers like to have their share of fun and games, (in a dignified manner, of course).</p> 
+        <p class='col-md-6 montserrat'>BODHI 2k17, the Annual TechFest of Viswajyothi College Of Engineering and Technology, celebrates, fosters and proudly presents <strong>the pioneering and inquisitive minds of engineers</strong>. &#9;A fete like no other, it has imbibed the true spirit of science and technology, and presented it in modes and manners, easily digested by the ragtag Generation X-ers for the past <strong>NUMBER</strong> years.  <strong>It's not all about exhibits and presentations</strong>; even engineers like to have their share of fun and games, (in a dignified manner, of course).</p> 
         <div class='col-md-6 text-center img-center center-block'>
-            <img class='img-responsive' src="./images/BodhiOrange.png" height="779" width="550">
+            <img class='img-responsive' src="./images/BodhiOrange.png" height="689" width="460">
         </div>
     </div>
     <div class="container-fluid well quote">
@@ -1678,21 +1731,22 @@
     </div>
     <div id="Contact" class="container-fluid bg-grey Contact-card">
         <h2 align="center">CONTACT</h2>
-	        <div class="w3-container col-sm-3 Contact-card">
-			  	<div class="w3-card-4" style="width:100%">
+        	<div id="pattern" class="pattern">
+		    <div class="col-group">
+		      <div>
+		        <div class="w3-card-4" style="width:100%">
 				    <header class="w3-container w3-light-grey">
 				      	<h3>Jose Francis</h3>
 				    </header>
 				    <div class="w3-container">
 					    <hr>
 					    <img src="./images/jose.jpg" alt="Avatar" class="w3-left w3-rounded w3-margin-right" style="width:50px">
-					    <p>Union Chairman<br>+91 94954 26599s</p><br>
+					    <p>Union Chairman<br><br>+91 94954 26599</p><br>
 				    </div>
 				</div>
-			</div>
-			 
-			<div class="w3-container col-sm-3 Contact-card">
-			  	<div class="w3-card-4" style="width:100%">
+		      </div>
+		      <div>
+		        <div class="w3-card-4" style="width:100%">
 				    <header class="w3-container w3-light-grey">
 				      	<h3>Basil George</h3>
 				    </header>
@@ -1702,10 +1756,9 @@
 				      	<p>Union General Secretary<br>+91 98951 95005</p><br>
 			    	</div>
 			  	</div>
-			</div>
-
-			<div class="w3-container col-sm-3 Contact-card">
-			  	<div class="w3-card-4" style="width:100%">
+		      </div>
+		      <div>
+		        <div class="w3-card-4" style="width:100%">
 				    <header class="w3-container w3-light-grey">
 				      	<h3>Hanna George</h3>
 				    </header>
@@ -1715,10 +1768,9 @@
 				      	<p>Union Vice Chairperson<br>+91 94961 82916</p><br>
 			    	</div>
 			  	</div>
-			</div>
-
-			<div class="w3-container col-sm-3 Contact-card">
-			  	<div class="w3-card-4" style="width:100%">
+		      </div>
+		      <div>
+		        <div class="w3-card-4" style="width:100%">
 				    <header class="w3-container w3-light-grey">
 				      	<h3>Jibin Joshy</h3>
 				    </header>
@@ -1728,9 +1780,21 @@
 				      	<p>Union Sports Secretary<br>+91 82812 01506</p><br>
 			    	</div>
 			  	</div>
-			</div>
-
-			
+		      </div>
+		      <div>
+		        <div class="w3-card-4" style="width:100%">
+				    <header class="w3-container w3-light-grey">
+				      	<h3>Joe Paul</h3>
+				    </header>
+				    <div class="w3-container">
+				      	<hr>
+				      	<img src="./images/joe.jpg" alt="Avatar" class="w3-left w3-rounded w3-margin-right" style="width:50px">
+				      	<p>Union Sports Secretary<br>+91 85475 00794</p><br>
+			    	</div>
+			  	</div>
+		      </div>
+		    </div>
+		  </div>
 	</div>
     <div id="map"></div>
     <script>
