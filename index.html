@@ -621,6 +621,7 @@
     }
     span #the-eng{
         display: none;
+        color: white;
     }
     .well2{
     	background: #fff;
@@ -1927,8 +1928,10 @@
         
     </div>
     <div class="container-fluid well2">
-            <p class="the-ends" style="display: inline;"> To be an Engineer is to </p>
-        	<p id="the-end" style="display: inline;"></p>
+            <span class="the-ends typed-cursor">
+                <p class="the-ends" style="display: inline;"> To be an Engineer is to </p>
+            	<p id="the-end" style="display: inline;"></p>
+            </span>
     </div>
     <p><br>Coded with <span style="color: red">❤</span> by <a href="https://www.github.com/SooluThomas" target="_blank">Soolu Thomas</a> </p>
     </footer>
@@ -1973,7 +1976,7 @@
     <script>
 		$(function(){
 		    $("#element").typed({
-		        strings: ["The doors have opened","For the eyes to feast on!!", "and for our minds to ponder on..!!"],
+		        strings: ["The doors have opened","For the eyes to feast on!!", "And for our minds to ponder on..!!"],
 		        typeSpeed: 1.5,
 		        startDelay: 4000,
 		        backDelay: 3000,
